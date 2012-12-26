@@ -11,13 +11,15 @@ $(document).ready(function() {
             windowWidth = $(window).width();
             //$('body').prepend('<div>' + windowWidth + '</div>');
 
+            var regionEast =  $("#regionEast");
+
             if(windowWidth < 479) {
                 $("#regionMidwest div.bracketColumn3").hide();
                 $("#regionMidwest div.bracketColumn4").hide();
                 $("#regionMidwest div.bracketColumn5").hide();
 
                 // switch orientation of brackets to left facing
-                $("#regionEast").removeClass("bracketRight").addClass("bracketLeft");
+                regionEast.removeClass("bracketRight").addClass("bracketLeft");
 
 
             } else {
@@ -26,7 +28,7 @@ $(document).ready(function() {
                 $("#regionMidwest div.bracketColumn5").show();
 
                 // switch orientation of brackets to left facing
-                $("#regionEast").removeClass("bracketLeft").addClass("bracketRight");
+                regionEast.removeClass("bracketLeft").addClass("bracketRight");
 
             }
 
@@ -41,7 +43,6 @@ $(document).ready(function() {
 
 
 
-    $("#navbar").scrollspy('slow');
 
 
 

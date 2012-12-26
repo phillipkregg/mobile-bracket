@@ -1,7 +1,4 @@
 
-
-
-
 .no-shadow {
   box-shadow: none;
 }
@@ -22,31 +19,57 @@ body {
   background: #F7F7F7;
   //height: 300px;
 }
+
+
+
+
 #navbar{
+
   z-index: 9999;
   height: 170px;
-  //opacity: .08;
-  position: fixed;
-  padding-top: 10px;
-  top: 0;
-  width: 100%;
-  background: url("../_images/mini_map.png") #fff no-repeat 46px 20px;
+  width: 300px;
+  padding-top: 20px;
+  background: url("../_images/mini_map.png") #db7093 no-repeat center center;
+
+  #nav_hover_grid {
+    width: 116px;
+    height: 86px;
+    background: black;
+    opacity: .08;
+    margin-left: 90px;
+
+
+  }
+
 }
+
+
+
+
+
+#mobile_nav {
+  z-index: 9999;
+  //top: 150px;
+}
+
 
 .nav {
+
   width: 5px;
-  margin-top: 10px;
-  margin-left: 45px;
+  margin-top: 30px;
+  //margin-left: 45px;
 }
 
-.nav li { list-style-type: none; }
+.nav li {
+  list-style-type: none;
+}
 
 .nav li a{
   float: left;
   width: 10px;
   height: 5px;
   //padding: 5px 0;
-  background: none;
+  background: #87ceeb;
   border: none;
 
 }
@@ -59,16 +82,10 @@ body {
 }
 
 
-.bracketLeft {
-  margin-left: 40px;
-
-}
 
 
 #south_group1 {
-  //padding-top: 200px;
-//  margin-top: 50px;
-//  height: 100px;
+
 
 }
 
@@ -93,7 +110,7 @@ body {
 
 .col-header {
 
-  height: 50px !important;
+  //height: 50px !important;
 
 
 
@@ -134,7 +151,12 @@ body {
 
 
 
-
+.affix {
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  //left: 0px;
+}
 
 
 
