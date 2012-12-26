@@ -1,352 +1,335 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>MobileBracket</title>
+    <head>
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">-->
+        <link rel="stylesheet" type="text/css" href="javascripts/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.css">
+        <link rel="stylesheet/less" media="all" href="stylesheets/manifest.less">
+
+        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="javascripts/jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
+        <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+        <script type="text/javascript" src="javascripts/less.js"></script>
+        <script type="text/javascript" src="javascripts/bracket.js"></script>
+
+        <script>
+
+            $(document).ready(function() {
+                //$("#map_container").affix();
+                //$('#navbar').scrollspy();
+
+                bracketNav();
 
 
-    <link rel="stylesheet/less" media="all" href="/stylesheets/reset.less">
-    <link rel="stylesheet/less" media="all" href="/stylesheets/layout.less">
-    <link rel="stylesheet/less" media="all" href="/stylesheets/elements.less">
-    <link rel="stylesheet/less" media="all" href="/stylesheets/cbbtourney.less">
-    <link rel="stylesheet/less" media="all" href="/stylesheets/bracket-16.less">
-    <link rel="stylesheet/less" media="all" href="/stylesheets/custom.less">
-  
-    
-    <script type="text/javascript" src="/javascripts/jquery-ui/js/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
-    <script type="text/javascript" src="/javascripts/bootstrap.js"></script>
-    <script type="text/javascript" src="/javascripts/less.js"></script>
+                function bracketNav() {
 
-    <script type="text/javascript" src="/javascripts/bracket.js"></script>
-    <script type="text/javascript" src="/javascripts/mobile-bracket.js"></script>
+                    var nextButton = $("#bracket_next");
+                    var backButton = $("#bracket_back");
 
+                    var bracketArray = [];
 
-   <script>
+                    $(".bracketColumn1").children().each(function() {
+                        bracketArray.push(this);
+                        //console.log(bracketArray);
 
-      $(document).ready(function() {
-          //$("#map_container").affix();
-          //$('#navbar').scrollspy();
+                        //console.log($(this).index());
 
-          bracketNav();
+                    });
 
+                    console.log(bracketArray);
 
-          function bracketNav() {
-
-              var nextButton = $("#bracket_next");
-              var backButton = $("#bracket_back");
-
-              var bracketArray = [];
-
-              $(".bracketColumn1").children().each(function() {
-                  bracketArray.push(this);
-                  //console.log(bracketArray);
-
-                  //console.log($(this).index());
-
-              });
-
-              console.log(bracketArray);
-
-              $(nextButton).bind("click", function() {
-                 $(".bracketColumn1").scrollTop() + 200;
-              });
+                    $(nextButton).bind("click", function() {
+                       $(".bracketColumn1").scrollTop() + 200;
+                    });
 
 
 
 
-          } // end bracketNav function
+                } // end bracketNav function
 
 
-      });
+            });
 
-  </script>
+        </script>
 
-
-  
-  <%= csrf_meta_tags %>
-</head>
-
-
+    </head>
 
     <body data-spy="scroll"  data-target="#navbar">
 
 
-            <div class="container">
-                <div id="navbar">
-                    <ul class="nav">
-                        <li><a class="" href="#south_group1"></a></li>
-                        <li><a class="" href="#south_group2"></a></li>
-                        <li><a class="" href="#south_group3"></a></li>
-                        <li><a class="" href="#south_group4"></a></li>
-                        <li><a class="" href="#east_group1"></a></li>
-                        <li><a class="" href="#east_group2"></a></li>
-                        <li><a class="" href="#east_group3"></a></li>
-                        <li><a class="" href="#east_group4"></a></li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a class="" href="#"></a></li>
-                        <li><a class="" href="#"></a></li>
-                        <li><a class="" href="#"></a></li>
-                        <li><a class="" href="#"></a></li>
-                        <li><a class="" href="#"></a></li>
-                    </ul>
+        <div class="container">
+            <div id="navbar">
+                <ul class="nav">
+                    <li><a class="" href="#south_group1"></a></li>
+                    <li><a class="" href="#south_group2"></a></li>
+                    <li><a class="" href="#south_group3"></a></li>
+                    <li><a class="" href="#south_group4"></a></li>
+                    <li><a class="" href="#east_group1"></a></li>
+                    <li><a class="" href="#east_group2"></a></li>
+                    <li><a class="" href="#east_group3"></a></li>
+                    <li><a class="" href="#east_group4"></a></li>
+                </ul>
+                <ul class="nav">
+                    <li><a class="" href="#"></a></li>
+                    <li><a class="" href="#"></a></li>
+                    <li><a class="" href="#"></a></li>
+                    <li><a class="" href="#"></a></li>
+                    <li><a class="" href="#"></a></li>
+                </ul>
 
-                    <div class="" id="bracket_nav">
-                        <div class="bracket_button" id="bracket_back">
-                            <h4>Back</h4>
-                        </div>
-                        <div class="bracket_button" id="bracket_next">
-                            <h4>Next</h4>
-                        </div>
+                <div class="" id="bracket_nav">
+                    <div class="bracket_button" id="bracket_back">
+                        <h4>Back</h4>
+                    </div>
+                    <div class="bracket_button" id="bracket_next">
+                        <h4>Next</h4>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+
+        <div class="container main no-shadow" >
+
+            <div class="bracketLeft">
+
+                <div class="bracketColumn1">
+
+                    <div id="south_group1" class="box">
+
+                        <div class="round1">
+                            <div class="statcast">
+                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=1">
+                                    <div class="statcastGraphic"></div>
+                                </a>
+                            </div>
+
+                            <div id="location1" class="teamContainer">
+
+                                <div class="pickableTeam" rel="1">
+                                    <div class="seed">1
+                                    </div>
+                                    <div class="team">Kentucky</div>
+                                </div>
+                                <div class="location_id">1</div>
+                            </div>
+
+                            <div id="location2" class="teamContainer noMargin">	<div class="pickableTeam" rel="2">
+                                <div class="seed">16</div>
+                                <div class="team">Western Ky</div>
+                            </div>
+                                <div class="location_id">2</div>
+                            </div>
+
+                        </div>
+
+                        <div class="round1">
+                            <div class="statcast">
+                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=3">
+                                    <div class="statcastGraphic"></div>
+                                </a>
+                            </div>
+
+                            <div id="location3" class="teamContainer">
+                                <div class="pickableTeam" rel="3">
+                                    <div class="seed">8</div>
+                                    <div class="team">Iowa St</div>
+                                </div>
+                                <div class="location_id">3</div></div>
+
+                            <div id="location4" class="teamContainer noMargin">
+                                <div class="pickableTeam" rel="4">
+                                    <div class="seed">9</div>
+                                    <div class="team">Connecticut</div>
+                                </div>
+                                <div class="location_id">4</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div id="south_group2" class="box">
+
+                        <div class="round1">
+
+                            <div class="statcast">
+                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=5">
+                                    <div class="statcastGraphic"></div>
+                                </a>
+                            </div>
+
+                            <div id="location5" class="teamContainer">
+                                <div class="pickableTeam" rel="5">
+                                    <div class="seed">5</div>
+                                    <div class="team">Wichita St</div>
+                                </div>
+                                <div class="location_id">5</div>
+                            </div>
+
+                            <div id="location6" class="teamContainer noMargin">
+                                <div class="pickableTeam" rel="6">
+                                    <div class="seed">12</div>
+                                    <div class="team">VCU</div>
+                                </div>
+                                <div class="location_id">6</div>
+                            </div>
+
+                        </div>
+
+                        <div class="round1">
+                            <div class="statcast">
+                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=7">
+                                    <div class="statcastGraphic"></div>
+                                </a>
+                            </div>
+
+                            <div id="location7" class="teamContainer">
+                                <div class="pickableTeam" rel="7">
+                                    <div class="seed">4</div>
+                                    <div class="team">Indiana</div>
+                                </div>
+                                <div class="location_id">7</div>
+                            </div>
+
+                            <div id="location8" class="teamContainer noMargin">
+                                <div class="pickableTeam" rel="8">
+                                    <div class="seed">13</div>
+                                    <div class="team">New Mexico St</div>
+                                </div>
+                                <div class="location_id">8</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="south_group3" class="box">
+                        <div class="round1">
+                            <div class="statcast">
+                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=9">
+                                    <div class="statcastGraphic"></div>
+                                </a>
+                            </div>
+                            <div id="location9" class="teamContainer">
+                                <div class="pickableTeam" rel="9">
+                                    <div class="seed">6</div>
+                                    <div class="team">UNLV</div>
+                                </div>
+                                <div class="location_id">9</div>
+                            </div>
+                            <div id="location10" class="teamContainer noMargin">
+                                <div class="pickableTeam" rel="10">
+                                    <div class="seed">11</div>
+                                    <div class="team">Colorado</div>
+                                </div>
+                                <div class="location_id">10</div>
+                            </div>
+                        </div>
+
+                        <div class="round1">
+                            <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=11">
+                                <div class="statcastGraphic"></div>
+                            </a></div>
+
+                            <div id="location11" class="teamContainer">
+                                <div class="pickableTeam" rel="11">
+                                    <div class="seed">3</div>
+                                    <div class="team">Baylor</div>
+                                </div>
+                                <div class="location_id">11</div>
+                            </div>
+
+                            <div id="location12" class="teamContainer noMargin">
+                                <div class="pickableTeam" rel="12">
+                                    <div class="seed">14</div>
+                                    <div class="team">S Dakota St</div>
+                                </div>	<div class="location_id">12</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="south_group4" class="box">
+
+
+
+                    </div>
+
+
+                    <div id="east_group1" class="box">
+
+
+
+                    </div>
+
+
+
+                    <div id="east_group2" class="box">
+
+
+
+                    </div>
+
+                    <div id="east_group3" class="box">
+
+
+
+                    </div>
+
+                    <div id="east_group4" class="box">
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
 
 
-            <div class="container main no-shadow" >
-
-                <div class="bracketLeft">
-
-                    <div class="bracketColumn1">
-
-                        <div id="south_group1" class="box">
-
-                            <div class="round1">
-                                <div class="statcast">
-                                    <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=1">
-                                        <div class="statcastGraphic"></div>
-                                    </a>
-                                </div>
-
-                                <div id="location1" class="teamContainer">
-
-                                    <div class="pickableTeam" rel="1">
-                                        <div class="seed">1
-                                        </div>
-                                        <div class="team">Kentucky</div>
-                                    </div>
-                                    <div class="location_id">1</div>
-                                </div>
-
-                                <div id="location2" class="teamContainer noMargin">	<div class="pickableTeam" rel="2">
-                                    <div class="seed">16</div>
-                                    <div class="team">Western Ky</div>
-                                </div>
-                                    <div class="location_id">2</div>
-                                </div>
-
-                            </div>
-
-                            <div class="round1">
-                                <div class="statcast">
-                                    <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=3">
-                                        <div class="statcastGraphic"></div>
-                                    </a>
-                                </div>
-
-                                <div id="location3" class="teamContainer">
-                                    <div class="pickableTeam" rel="3">
-                                        <div class="seed">8</div>
-                                        <div class="team">Iowa St</div>
-                                    </div>
-                                    <div class="location_id">3</div></div>
-
-                                <div id="location4" class="teamContainer noMargin">
-                                    <div class="pickableTeam" rel="4">
-                                        <div class="seed">9</div>
-                                        <div class="team">Connecticut</div>
-                                    </div>
-                                    <div class="location_id">4</div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div id="south_group2" class="box">
-
-                            <div class="round1">
-
-                                <div class="statcast">
-                                    <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=5">
-                                        <div class="statcastGraphic"></div>
-                                    </a>
-                                </div>
-
-                                <div id="location5" class="teamContainer">
-                                    <div class="pickableTeam" rel="5">
-                                        <div class="seed">5</div>
-                                        <div class="team">Wichita St</div>
-                                    </div>
-                                    <div class="location_id">5</div>
-                                </div>
-
-                                <div id="location6" class="teamContainer noMargin">
-                                    <div class="pickableTeam" rel="6">
-                                        <div class="seed">12</div>
-                                        <div class="team">VCU</div>
-                                    </div>
-                                    <div class="location_id">6</div>
-                                </div>
 
-                            </div>
 
-                            <div class="round1">
-                                <div class="statcast">
-                                    <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=7">
-                                        <div class="statcastGraphic"></div>
-                                    </a>
-                                </div>
 
-                                <div id="location7" class="teamContainer">
-                                    <div class="pickableTeam" rel="7">
-                                        <div class="seed">4</div>
-                                        <div class="team">Indiana</div>
-                                    </div>
-                                    <div class="location_id">7</div>
-                                </div>
 
-                                <div id="location8" class="teamContainer noMargin">
-                                    <div class="pickableTeam" rel="8">
-                                        <div class="seed">13</div>
-                                        <div class="team">New Mexico St</div>
-                                    </div>
-                                    <div class="location_id">8</div>
-                                </div>
 
-                            </div>
 
-                        </div>
 
-                        <div id="south_group3" class="box">
-                            <div class="round1">
-                                <div class="statcast">
-                                    <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=9">
-                                        <div class="statcastGraphic"></div>
-                                    </a>
-                                </div>
-                                <div id="location9" class="teamContainer">
-                                    <div class="pickableTeam" rel="9">
-                                        <div class="seed">6</div>
-                                        <div class="team">UNLV</div>
-                                    </div>
-                                    <div class="location_id">9</div>
-                                </div>
-                                <div id="location10" class="teamContainer noMargin">
-                                    <div class="pickableTeam" rel="10">
-                                        <div class="seed">11</div>
-                                        <div class="team">Colorado</div>
-                                    </div>
-                                    <div class="location_id">10</div>
-                                </div>
-                            </div>
 
-                            <div class="round1">
-                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=11">
-                                    <div class="statcastGraphic"></div>
-                                </a></div>
 
-                                <div id="location11" class="teamContainer">
-                                    <div class="pickableTeam" rel="11">
-                                        <div class="seed">3</div>
-                                        <div class="team">Baylor</div>
-                                    </div>
-                                    <div class="location_id">11</div>
-                                </div>
 
-                                <div id="location12" class="teamContainer noMargin">
-                                    <div class="pickableTeam" rel="12">
-                                        <div class="seed">14</div>
-                                        <div class="team">S Dakota St</div>
-                                    </div>	<div class="location_id">12</div>
-                                </div>
 
-                            </div>
 
-                        </div>
 
-                        <div id="south_group4" class="box">
 
 
 
-                        </div>
 
 
-                        <div id="east_group1" class="box">
+        </div> <!-- end container main -->
 
-
-
-                        </div>
-
-
-
-                        <div id="east_group2" class="box">
-
-
-
-                        </div>
-
-                        <div id="east_group3" class="box">
-
-
-
-                        </div>
-
-                        <div id="east_group4" class="box">
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div> <!-- end container main -->
-
-        </body>​​
-
-
-
-
+    </body>​​
 
 </html>

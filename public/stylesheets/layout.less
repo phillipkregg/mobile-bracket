@@ -1,11 +1,11 @@
-
-
 /* 	athlon sports
 	pickem-engine master stylesheet
 ----------------------------------------------------------------------------------------------------*/
 
-
 body {
+  h2 {
+    //font-family: Consolas;
+  }
   min-width: 960px;
   color: #555;
 /*	background: #000 url('../_images/bkg/body.jpg') no-repeat center top;*/
@@ -13,12 +13,10 @@ body {
 }
 
 .body.fox {
-  background-image: url('../_images/bkg/body-fox.jpg') !important;
+  background-image: url('../../_images/bkg/body-fox.jpg') !important;
 }
 
-.body.dodge {
-  background-image: url('../_images/bkg/body-dodge.jpg') !important;
-}
+
 
 .wings {
 /*	background: #000 url('../_images/bkg/racing.jpg') no-repeat center top;*/
@@ -63,13 +61,13 @@ a:hover {
   padding: 20px 0;
   font-size: 0.8em;
   color: #555;
-  background: #fff url('../_images/bkg/sidebar.png') 640px top repeat-y;
+  background: #fff url('../../_images/bkg/sidebar.png') 640px top repeat-y;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
-  border-top: 0px solid red;
+  border-top: 0px solid red; /* used when header does not have background fill */
 }
 
 .main.register {
-  background-image: url('../_images/bkg/register.jpg');
+  background-image: url('../../_images/bkg/register.jpg');
 }
 
 .main.full {
@@ -85,7 +83,7 @@ a:hover {
 }
 
 /* temporarily hide video callout */
-.subfooter .callouts { display: none; }
+//.subfooter .callouts { display: none; }
 
 
 /* Header & Footer
@@ -93,10 +91,11 @@ a:hover {
 
 header { /* IE z-index fix */
   position: relative;
+
   z-index: 2000;
 /*	background: #000 url('../_images/bkg/header.jpg') no-repeat top;*/
   background: none;
-  border-bottom: 2px solid red;
+  //border-bottom: 3px solid #0086B4; /* zero or 'none' when header does not have background fill */
 }
 
 header,
@@ -105,6 +104,7 @@ header a {
 }
 
 header .logos {
+
   overflow: hidden;
   min-height: 50px;
 /*	position: relative;*/
@@ -112,7 +112,7 @@ header .logos {
 
 header .client-logo {
   float: left;
-  margin: 20px 0 20px 20px;
+  margin: 50px 0 20px 20px;
   max-width: 50%;
   max-height: 170px;
 }
@@ -132,7 +132,7 @@ header .game-logo {
   float: right;
   width: 234px;
   height: 110px;
-  background: url('../_images/logos/game-header.png') no-repeat right;
+  background: url('/less/themes/fbpickem/2012_default/_images/bracket_breakdown_logo.png') no-repeat right;
   background-size: contain;
 }
 
@@ -141,7 +141,7 @@ footer {
   padding: 20px 0 40px;
   font-size: 0.7em;
   line-height: 1.4em;
-  background: #232323 url('../_images/bkg/footer.jpg') no-repeat top;
+  background: #232323 url('../../_images/bkg/footer.jpg') no-repeat top;
 }
 
 footer,
@@ -238,15 +238,16 @@ footer .copyright span {
 .sup-hdr,
 .sup-hdr .container {
   position: relative;
+  //height: 50px;
 }
 
 .sup-hdr {
   text-align: center;
   background: #000;
-  border-bottom: 1px solid #ff0000;
+  //border-bottom: 1px solid #ff0000;
 }
 
-.sup-hdr .container { padding: 35px 0 10px 0; }
+.sup-hdr .container { padding: 0px 0 10px 0; }
 
 .sup-hdr.logged-in .container { padding: 10px 0; }
 
@@ -284,26 +285,27 @@ footer .copyright span {
   padding: 0 0 2px 10px;
   text-decoration: none;
   color: #fafafa;
-  background: #d90000 url('../_images/bkg/fade-to-black-40v.png') repeat-x top;
+  background: #0086B4 url('../../_images/bkg/fade-to-black-40v.png') repeat-x top;
   border: 1px solid #222;
   border-top: none;
   border-radius: 0 0 3px 3px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }
 
+// Login Button Colors
 .pulldown-tabs a.current {
-  background: #ff0000;
-  border-color: #ff0000;
+  background: #0086B4;
+  border-color: #0086B4;
 }
 
 .pulldown-tabs a span {
   display: block;
   padding-right: 40px;
-  background: url('../_images/icons/toggle-down.png') no-repeat right;
+  background: url('../../_images/icons/toggle-down.png') no-repeat right;
 }
 
 .pulldown-tabs a.current span {
-  background-image: url('../_images/icons/toggle-up.png');
+  background-image: url('../../_images/icons/toggle-up.png');
 }
 
 
@@ -315,7 +317,7 @@ header nav {
   position: relative;
   z-index: 1001;
   line-height: 40px;
-  background: #45494d url(../_images/bkg/fade-to-black-40v.png) repeat-x top;
+  background: #45494d url(../../_images/bkg/fade-to-black-40v.png) repeat-x top;
 }
 
 header nav,
@@ -327,7 +329,7 @@ header .mobile-nav {
 
 header .mobile-nav {
   line-height: 30px;
-  background: #45494d url('../_images/bkg/fade-to-black-40v.png') repeat-x top;
+  background: #45494d url('../../_images/bkg/fade-to-black-40v.png') repeat-x top;
 }
 
 header .mobile-nav li,
@@ -358,11 +360,11 @@ header .mobile-nav .more a {
 header #nav-toggle span {
   display: block;
   padding-right: 40px;
-  background: url('../_images/icons/toggle-down.png') no-repeat right;
+  background: url('../../_images/icons/toggle-down.png') no-repeat right;
 }
 
 header #nav-toggle.open span {
-  background-image: url('../_images/icons/toggle-up.png');
+  background-image: url('../../_images/icons/toggle-up.png');
 }
 
 header #alt-nav { float: right; }
@@ -570,6 +572,7 @@ header .subnav select {
 .main.home {
   padding: 0;
   background-image: none;
+  border-top: 2px solid #0086B4;  // provides bottom border color of nav
 }
 
 .home .column,
@@ -648,7 +651,7 @@ footer .column {
   font-family: "Russo One", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  background: #f8f8f8 url('../_images/bkg/hero-tabs.png') repeat-x bottom;
+  background: #f8f8f8 url('../../_images/bkg/hero-tabs.png') repeat-x bottom;
 }
 
 .slidetabs a {
@@ -679,11 +682,11 @@ footer .column {
 .slidetabs a span {
   display: block;
   padding: 0 50px 0 10px;
-  background: url('../_images/btn/hero-tab.png') no-repeat right;
+  background: url('../../_images/btn/hero-tab.png') no-repeat right;
 }
 
 .slidetabs a.current span {
-  background-image: url('../_images/btn/hero-tab-current.png');
+  background-image: url('../../_images/btn/hero-tab-current.png');
 }
 
 .slidetabs.four { font-size: 13px; }
@@ -718,7 +721,7 @@ footer .column {
   line-height: 13px;
 }
 
-.home .livestreamEntry .avatar-crop {
+.home .Entry .avatar-crop {
   width: 25px;
   height: 25px;
 }
@@ -790,7 +793,7 @@ footer .column {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  background: url('../_images/bkg/countdown-flipper.png') no-repeat top;
+  background: url('../../_images/bkg/countdown-flipper.png') no-repeat top;
 }
 
 /* home page side bar */
@@ -848,32 +851,32 @@ footer .column {
 .athlonsports {
   width: 300px;
   height: 44px;
-  background-image: url(../_images/logos/athlonsports.png);
+  background-image: url(../../_images/logos/athlonsports.png);
 }
 
 .game {
   width: 291px;
   height: 91px;
-  background-image: url(../_images/logos/game-header.png);
+  background-image: url(../../_images/logos/game-header.png);
 }
 
 .facebook {
   width: 16px;
   height: 16px;
-  background-image: url(../_images/logos/facebook.png);
+  background-image: url(../../_images/logos/facebook.png);
 }
 
 .twitter {
   width: 16px;
   height: 16px;
-  background-image: url(../_images/logos/twitter.png);
+  background-image: url(../../_images/logos/twitter.png);
 }
 
 .statcast {
   display: su;
   width: 16px;
   height: 16px;
-  background-image: url('../../bracket/_images/statcast.png');
+  background-image: url('../_images/logos/statcast.png');
   cursor: pointer;
 }
 
@@ -910,9 +913,9 @@ h2.step {
   background: no-repeat left top;
 }
 
-h2.step.one { background-image: url('../_images/icons/step1.png'); }
-h2.step.two { background-image: url('../_images/icons/step2.png'); }
-h2.step.three { background-image: url('../_images/icons/step3.png'); }
+h2.step.one { background-image: url('../../_images/icons/step1.png'); }
+h2.step.two { background-image: url('../../_images/icons/step2.png'); }
+h2.step.three { background-image: url('../../_images/icons/step3.png'); }
 
 .boxlabel { margin: 0 0 1px 5px; }
 
@@ -1029,14 +1032,14 @@ em { font-style: italic; }
   border: 1px solid #ccc;
   border-top-color: #999;
   border-left-color: #888;
-  background: #fff url('../_images/bkg/meter.png') repeat-x;
+  background: #fff url('../../_images/bkg/meter.png') repeat-x;
 }
 
 .meter .bar {
   white-space: nowrap;
   text-align: center;
   color: #333;
-  background: #56D941 url('../_images/bkg/meter.png') repeat-x;
+  background: #56D941 url('../../_images/bkg/meter.png') repeat-x;
 }
 
 .meter .bar.level1 {
@@ -1242,7 +1245,7 @@ em { font-style: italic; }
   font-size: 15px;
   line-height: 30px;
   color: #fff;
-  background: #53585c url(../_images/bkg/panel-hdg.png) repeat-x bottom;
+  background: #53585c url(../../_images/bkg/panel-hdg.png) repeat-x bottom;
   border: 2px solid #fcfcfc;
   border-radius: 6px 6px 0 0;
 }
@@ -1309,11 +1312,11 @@ em { font-style: italic; }
 
 .expander .toggle span {
   padding-left: 15px;
-  background: url('../_images/icons/arrow-down-dark.png') no-repeat left;
+  background: url('../../_images/icons/arrow-down-dark.png') no-repeat left;
 }
 
 .expander .toggle.open span {
-  background-image: url('../_images/icons/arrow-up-dark.png');
+  background-image: url('../../_images/icons/arrow-up-dark.png');
 }
 
 .pickcast .expander { height: 270px; }
@@ -1455,7 +1458,7 @@ a.avatar:hover .avatar-crop {
   overflow: hidden;
   margin-bottom: 20px;
   padding: 15px;
-  background: url(../_images/bkg/user.png) repeat-x bottom;
+  background: url(../../_images/bkg/user.png) repeat-x bottom;
   border: 1px solid #cacaca;
   border-right-color: #aaa;
   border-bottom-color: #888;
@@ -1558,7 +1561,7 @@ a.avatar:hover .avatar-crop {
   text-align: left !important;
   line-height: normal !important;
   color: #777;
-  background: url('../_images/icons/arrow-down-green.png') no-repeat left 3px;
+  background: url('../../_images/icons/arrow-down-green.png') no-repeat left 3px;
 }
 
 .experts a:hover span {
@@ -1566,7 +1569,7 @@ a.avatar:hover .avatar-crop {
 }
 
 .experts a.active span {
-  background-image: url('../_images/icons/arrow-up-green.png');
+  background-image: url('../../_images/icons/arrow-up-green.png');
   background-position: left 2px;
 }
 
@@ -1758,8 +1761,8 @@ a.avatar:hover .avatar-crop {
   cursor: default;
 }
 
-.rounds .previous a { background-image: url('../_images/icons/arrow-left-white.png'); }
-.rounds .next a { background-image: url('../_images/icons/arrow-right-white.png'); }
+.rounds .previous a { background-image: url('../../_images/icons/arrow-left-white.png'); }
+.rounds .next a { background-image: url('../../_images/icons/arrow-right-white.png'); }
 
 .rounds .menu,
 .rounds .menu ul {
@@ -1821,7 +1824,7 @@ a.avatar:hover .avatar-crop {
 .rounds .menu .toggle {
   width: 30px;
   height: 20px;
-  background: url('../_images/icons/arrow-down-dark.png') no-repeat center;
+  background: url('../../_images/icons/arrow-down-dark.png') no-repeat center;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1854,7 +1857,7 @@ a.avatar:hover .avatar-crop {
 }
 
 .rounds.open .menu li.active a {
-  background: url('../_images/icons/football.png') no-repeat 96%;
+  background: url('../../_images/icons/football.png') no-repeat 96%;
 }
 
 .rounds.open .menu a:hover {
@@ -2009,7 +2012,7 @@ a.avatar:hover .avatar-crop {
 }
 
 .round-progress .complete span {
-  background: #fbfbfb url('../_images/bkg/slice.png') center;
+  background: #fbfbfb url('../../_images/bkg/slice.png') center;
 }
 
 
@@ -2084,7 +2087,7 @@ a.avatar:hover .avatar-crop {
   line-height: 14px;
   height: 50px;
   padding: 10px 5px;
-  background: #fff url('../_images/bkg/livestream.png') repeat-x bottom;
+  background: #fff url('../../_images/bkg/livestream.png') repeat-x bottom;
 }
 
 .livestreamEntry div {
@@ -2093,8 +2096,8 @@ a.avatar:hover .avatar-crop {
 
 .livestreamEntry .avatar-crop {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #aaa;
 }
 
@@ -2135,7 +2138,7 @@ a.avatar:hover .avatar-crop {
   width: 33%;
   font-size: 12px;
   line-height: 16px;
-  background: url('../_images/bkg/steps-div.png') no-repeat left top;
+  background: url('../../_images/bkg/steps-div.png') no-repeat left top;
 }
 
 .steps li:first-child {
@@ -2395,7 +2398,7 @@ article a:hover span {
   line-height: 27px;
   font-weight: bold;
   padding-right: 12px;
-  background: url('../_images/icons/arrow-right-dark.png') no-repeat right;
+  background: url('../../_images/icons/arrow-right-dark.png') no-repeat right;
 }
 
 /* form fields */
@@ -2488,7 +2491,7 @@ input.numeric {
 }
 
 div.required,
-.required span { background: url('../_images/icons/required.png') no-repeat right 6px; }
+.required span { background: url('../../_images/icons/required.png') no-repeat right 6px; }
 
 div.required {
   float: right;
@@ -2645,7 +2648,7 @@ input[type="button"] {
   text-decoration: none;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
   color: #fff;
-  background: #56D941 url('../_images/bkg/btn2.png') repeat-x top;
+  background: #56D941 url('../../_images/bkg/btn2.png') repeat-x top;
   border: 1px solid #0D9900;
   border-right-color: #006622;
   border-bottom-color: #006622;
@@ -2656,7 +2659,7 @@ input[type="button"] {
 .btn:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  background-image: url('../_images/bkg/btn2_o.png');
+  background-image: url('../../_images/bkg/btn2_o.png');
   border-color: #064D00;
   box-shadow: 0 0 2px #0088ee;
 }
@@ -2751,7 +2754,7 @@ input[type="button"].big {
 
 .back span {
   padding-left: 13px;
-  background: url('../_images/icons/arrow-left-white.png') no-repeat left;
+  background: url('../../_images/icons/arrow-left-white.png') no-repeat left;
 }
 
 a.btn.fb {
@@ -2760,7 +2763,7 @@ a.btn.fb {
 
 .fb span {
   padding: 0 15px 0 50px;
-  background: url('../_images/btn/facebook-f.png') no-repeat left;
+  background: url('../../_images/btn/facebook-f.png') no-repeat left;
 }
 
 
@@ -2770,7 +2773,7 @@ a.btn.fb {
   display: block;
   width: 150px;
   height: 22px;
-  background: url('../_images/btn/signin_facebook.png');
+  background: url('../../_images/btn/signin_facebook.png');
   text-indent: -9999em;
 }
 
@@ -2818,7 +2821,7 @@ a.btn.fb {
 .signup-banner {
   overflow: hidden;
   color: #fff;
-  background: #56D941 url('../_images/bkg/btn.png') repeat-x center;
+  background: #56D941 url('../../_images/bkg/btn.png') repeat-x center;
   border: 1px solid #fff;
   padding: 10px 20px;
 }
@@ -2832,7 +2835,7 @@ a.btn.fb {
   line-height: 44px;
   text-transform: uppercase;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background: url('../_images/icons/signup.png') no-repeat left;
+  background: url('../../_images/icons/signup.png') no-repeat left;
 }
 
 .signup-banner .btn {
@@ -2906,41 +2909,41 @@ table .icon,
 }
 
 .icon.delete {
-  background-image: url('../_images/icons/delete.png');
+  background-image: url('../../_images/icons/delete.png');
 }
 
 .icon.admin {
-  background-image: url('../_images/icons/administrator.png');
+  background-image: url('../../_images/icons/administrator.png');
 }
 
 .icon.email {
-  background-image: url('../_images/icons/envelope-pencil.png');
+  background-image: url('../../_images/icons/envelope-pencil.png');
 }
 
 .icon.manage-league {
-  background-image: url('../_images/icons/ico_gear.png');
+  background-image: url('../../_images/icons/ico_gear.png');
 }
 
 .icon.join-league {
-  background-image: url('../_images/icons/handshake.png');
+  background-image: url('../../_images/icons/handshake.png');
 }
 
 .icon.request-invite {
-  background-image: url('../_images/icons/invite.png');
+  background-image: url('../../_images/icons/invite.png');
 }
 
 .icon.information {
   cursor: default;
-  background-image: url('../_images/icons/information.png');
+  background-image: url('../../_images/icons/information.png');
 }
 
 .icon.feed {
-  background-image: url('../_images/icons/feed.png');
+  background-image: url('../../_images/icons/feed.png');
   background-color: #fff;
 }
 
 .icon.statcast {
-  background-image: url('../_images/icons/statcast.png');
+  background-image: url('../../_images/icons/statcast.png');
 }
 
 a.icon,
@@ -3042,7 +3045,7 @@ a.icon,
   width: 15px;
   height: 15px;
   cursor: pointer;
-  background: url('../_images/btn/close.png') no-repeat top;
+  background: url('../../_images/btn/close.png') no-repeat top;
 }
 
 .modal a.close:hover {
@@ -3056,7 +3059,7 @@ a.icon,
 
 .modal-hdr {
   color: #fff;
-  background: #53585c url('../_images/bkg/fade-to-black-40v.png') repeat-x bottom;
+  background: #53585c url('../../_images/bkg/fade-to-black-40v.png') repeat-x bottom;
   font-size: 18px;
   font-weight: bold;
   line-height: 38px;
@@ -3081,7 +3084,7 @@ a.icon,
 .modal .statcast-logo {
   text-indent: -9999em;
   height: inherit;
-  background: url('../_images/logos/statcast-logo-dark.png') no-repeat left;
+  background: url('../../_images/logos/statcast-logo-dark.png') no-repeat left;
 }
 
 
@@ -3328,6 +3331,17 @@ px      45    130    215    300    385    470    555    640    725    810     89
     margin-right: 40px;
   }
 
+  .navitem {
+    a {
+      &:hover {
+
+        background-color: #0086B4;
+      }
+    }
+  }
+
+
+
 }
 
 
@@ -3398,7 +3412,7 @@ px      34    98    162     226     290     354     418     482     546     610 
   .sidebar {
     padding: 20px 0 0 0;
     margin: 0;
-    background: url('../_images/bkg/sidebar.png') left repeat;
+    background: url('../../_images/bkg/sidebar.png') left repeat;
   }
 
   .alpha,
@@ -3427,24 +3441,36 @@ px      34    98    162     226     290     354     418     482     546     610 
   header #nav-toggle,
   header a.drop-toggle {
     display: none;
+
   }
 
 /* Home Page
 ----------------------------------------------------------------------------------------------------*/
 
+  .navitem {
+    a {
+      &:hover {
+        //.gradient(@slideTabCurrentBackground, @slideTabCurrentBackground, @slideTabBackgroundLighter);
+      //background-color: #0086B4;
+      }
+    }
+  }
+
+
   #slideshow {
-    height: 245px;
+    height: 275px;
   }
 
   #slideshow .slide,
   #slideshow .text,
   #slideshow .image {
-    height: 220px;
+    height: 250px;
   }
 
   #slideshow .text .padding { padding: 15px; }
 
   .slidetabs {
+    margin-top: 30px;
     height: 30px;
     line-height: 30px;
     font-size: 13px;
@@ -3558,6 +3584,9 @@ px      34    98    162     226     290     354     418     482     546     610 
 }
 
 
+
+
+
 /*		Phone Layout (landscape): 480px.
 		Columns: 1 @ 440px.
 		Gutters: 40px.
@@ -3615,7 +3644,7 @@ px      34    98    162     226     290     354     418     482     546     610 
   .sidebar {
     padding-top: 20px;
     margin: 0;
-    background: url('../_images/bkg/sidebar.png') left repeat;
+    background: url('../../_images/bkg/sidebar.png') left repeat;
   }
 
   label {
@@ -3713,12 +3742,14 @@ px      34    98    162     226     290     354     418     482     546     610 
 
   header #nav-wrapper {
     margin-top: 5px;
+
   }
 
   header .topnav .navitem,
   header .topnav .navitem:first-child {
     border: none !important;
     width: 100%;
+
   }
 
   header nav a {
@@ -3745,10 +3776,12 @@ px      34    98    162     226     290     354     418     482     546     610 
     border-color: #2E3033;
     border-left-color: #727980;
     border-top-color: #899199;
+
   }
 
   header nav .current > a {
-    background-image: url('../_images/icons/football.png');
+    //background-image: url('../../_images/icons/football.png');
+
   }
 
   header #alt-nav {
@@ -3800,13 +3833,13 @@ px      34    98    162     226     290     354     418     482     546     610 
 ----------------------------------------------------------------------------------------------------*/
 
   #slideshow {
-    height: 245px !important;
+    height: 275px !important;
   }
 
   #slideshow .slide,
   #slideshow .text,
   #slideshow .image {
-    height: 220px !important;
+    height: 250px !important;
   }
 
   #slideshow .text,
@@ -4190,7 +4223,7 @@ px      34    98    162     226     290     354     418     482     546     610 
   .sidebar {
     padding-top: 20px;
     margin: 0;
-    background: url('../_images/bkg/sidebar.png') left repeat;
+    background: url('../../_images/bkg/sidebar.png') left repeat;
   }
 
   article img { width: 80px; }
@@ -4314,12 +4347,18 @@ px      34    98    162     226     290     354     418     482     546     610 
 
   header #nav-wrapper {
     margin-top: 5px;
+
   }
 
   header .topnav .navitem,
   header .topnav .navitem:first-child {
     border: none !important;
     width: 100%;
+
+  }
+
+  header .topnav {
+    border-bottom: 5px solid blue;
   }
 
   header nav a {
@@ -4349,7 +4388,7 @@ px      34    98    162     226     290     354     418     482     546     610 
   }
 
   header nav .current > a {
-    background-image: url('../_images/icons/football.png');
+    //background-image: url('../../_images/icons/football.png');
   }
 
   header #alt-nav {
@@ -4400,14 +4439,12 @@ px      34    98    162     226     290     354     418     482     546     610 
 /* Home page
 ----------------------------------------------------------------------------------------------------*/
 
-  #slideshow {
-    height: 310px !important;
-  }
+
 
   #slideshow .slide,
   #slideshow .text,
   #slideshow .image {
-    height: 280px !important;
+    //height: 100%  !important;
   }
 
   #slideshow .text,
@@ -4425,15 +4462,21 @@ px      34    98    162     226     290     354     418     482     546     610 
     text-align: right;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2;
+
+
   }
 
   #slideshow .text .padding { padding: 15px; }
+
 
   .slidetabs {
     height: 30px;
     line-height: 30px;
     font-size: 12px;
     text-align: center;
+
+
+
   }
 
   .slidetabs a em { display: block; }
@@ -4463,7 +4506,32 @@ px      34    98    162     226     290     354     418     482     546     610 
 
   #slideshow .fb span {
     padding: 0 50px;
+    margin: 0;
+    padding: 0;
   }
+
+
+
+  #slideshow {
+
+    height: 320px !important;
+
+    .image {
+      height: 305px  !important;
+    }
+
+    .slidetabs {
+
+    }
+    .padding {
+      height: 20px;
+    }
+  }
+
+
+
+
+
 
   .countdown .flipper {
     display: inline-block;
@@ -4844,7 +4912,7 @@ px      34    98    162     226     290     354     418     482     546     610 
 }
 
 .featuredwinner .nextweek {
-  background: transparent url('../_images/featuredwinner-divider.png') top center no-repeat;
+  background: transparent url('../../_images/featuredwinner-divider.png') top center no-repeat;
   padding-top: 10px;
   margin-top: 10px;
   margin-left: 175px;
@@ -4854,18 +4922,16 @@ px      34    98    162     226     290     354     418     482     546     610 
 
 
 
-//*************** PHILLIPS CUSTOM STUFF
 
-.red_block {
-  background: #cd5c5c;
-  height: 50px;
-  color: white;
-  padding: 10px;
-}
+/***************** BASKETBALL STUFF *****************/
 
-.blue_block {
-  background: #87ceeb;
-  height: 50px;
-  color: white;
-  padding: 10px;
-}
+
+
+
+
+
+
+
+
+
+
