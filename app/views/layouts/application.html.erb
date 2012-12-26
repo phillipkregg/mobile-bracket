@@ -21,14 +21,18 @@
         <!-- Bracket specific javascripts -->
         <script type="text/javascript" src="css/themes/fbpickem/bracket/_js/bracket.js"></script>
         <script type="text/javascript" src="js/mobile-bracket.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap_scrollspy.js"></script>
+        <script type="text/javascript" src="js/bootstrap_affix.js"></script>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            $('#navbar').affix();
+        </script>
+
 
     </head>
 
 
-    <body data-spy="scroll" data-target="#map">
+    <body data-spy="scroll" data-offset="400" data-target="#navbar">
         <h1>Body Starts</h1>
 
 
@@ -133,36 +137,61 @@
                                 </div>
                             </div>
 
-                            <div class="row twelve-col">
+                            <div id="navbar_container" class="row twelve-col affix visible-phone" >
                                 <div class="column col-12">
                                     <div id="navbar">
-                                        <ul class="nav">
-                                            <li><a class="" href="#south_group1"></a></li>
-                                            <li><a class="" href="#south_group2"></a></li>
-                                            <li><a class="" href="#south_group3"></a></li>
-                                            <li><a class="" href="#south_group4"></a></li>
-                                            <li><a class="" href="#east_group1"></a></li>
-                                            <li><a class="" href="#east_group2"></a></li>
-                                            <li><a class="" href="#east_group3"></a></li>
-                                            <li><a class="" href="#east_group4"></a></li>
-                                        </ul>
-                                        <ul class="nav">
-                                            <li><a class="" href="#"></a></li>
-                                            <li><a class="" href="#"></a></li>
-                                            <li><a class="" href="#"></a></li>
-                                            <li><a class="" href="#"></a></li>
-                                            <li><a class="" href="#"></a></li>
-                                        </ul>
+                                        <div id="nav_hover_grid">
+                                            <ul class="nav ">
+                                                <li><a class="" href="#south_group1"></a></li>
+                                                <li><a class="" href="#south_group2"></a></li>
+                                                <li><a class="" href="#south_group3"></a></li>
+                                                <li><a class="" href="#south_group4"></a></li>
+                                                <li><a class="" href="#east_group1"></a></li>
+                                                <li><a class="" href="#east_group2"></a></li>
+                                                <li><a class="" href="#east_group3"></a></li>
+                                                <li><a class="" href="#east_group4"></a></li>
+                                            </ul>
+                                            <ul class="nav">
+                                                <li><a class="" href="#"></a></li>
+                                                <li><a class="" href="#"></a></li>
+                                                <li><a class="" href="#"></a></li>
+                                                <li><a class="" href="#"></a></li>
+                                                <li><a class="" href="#"></a></li>
+                                            </ul>
+                                        </div>
 
-                                        <div class="" id="bracket_nav">
-                                            <div class="bracket_button" id="bracket_back">
-                                                <h4>Back</h4>
-                                            </div>
-                                            <div class="bracket_button" id="bracket_next">
-                                                <h4>Next</h4>
-                                            </div>
+                                        <!--<div class="" id="bracket_nav">-->
+                                            <!--<div class="bracket_button" id="bracket_back">-->
+                                                <!--<h4>Back</h4>-->
+                                            <!--</div>-->
+                                            <!--<div class="bracket_button" id="bracket_next">-->
+                                                <!--<h4>Next</h4>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div id="mobile_nav" class="container">
+                                        <div id="arrow_left">
+                                            <a class="round_arrow">left</a>
+                                        </div>
+                                        <ul id="round_container">
+                                            <li class="mobile_round">
+                                                <a >
+                                                    ROUND 1
+                                                </a>
+                                            </li>
+                                            <li class="mobile_round">
+                                                <a >
+                                                    ROUND 2
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div id="arrow_right">
+                                            <a >right</a>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
 
@@ -174,26 +203,7 @@
 
 
 
-                                <div id="mobile_nav" class="container visible-phone">
-                                    <div id="arrow_left">
-                                        <a class="round_arrow">left</a>
-                                    </div>
-                                    <ul id="round_container">
-                                        <li class="mobile_round">
-                                            <a >
-                                                ROUND 1
-                                            </a>
-                                        </li>
-                                        <li class="mobile_round">
-                                            <a >
-                                                ROUND 2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div id="arrow_right">
-                                        <a >right</a>
-                                    </div>
-                                </div>
+
 
                                 <div class="bracketLeft" id="regionMidwest">
 
