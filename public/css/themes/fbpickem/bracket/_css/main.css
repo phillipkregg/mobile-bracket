@@ -1,0 +1,516 @@
+/* themes/bracket/_css  ::  All Bracket related Styles */
+@charset "UTF-8";
+
+*{ margin: 0; padding: 0; outline: 0; background: transparent;} body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } :focus {outline: 0;} table { border-collapse: collapse; border-spacing: 0; } a {text-decoration:none; }
+img {border: none;}
+.center {margin-left: auto; margin-right:auto;} .left {float:left;} .right {float:right;} .clear {clear:both;}
+.rightSp {float: right; margin-left:5px !important; }
+.leftSp {float: left; margin-right:5px !important; }
+
+img.alignright {float:right; margin:0 0 25px 25px}
+img.alignleft {float:left; margin:0 25px 25px 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.noMarBot {margin-bottom: 0 !important;}
+
+.aRight {text-align: right !important;}
+
+.gFull {width: 1000px; display: block;}
+.gHalf {width:305px; display: block;}
+
+.t-align-center {text-align: center !important;}
+.t-align-right {text-align: right !important;}
+
+body {background:#000; font-size:62.5%; font-family: "Helvetica Neue",Helvetica,sans-serif;}
+
+div#body {
+	background: url(../_images/bg.jpg) no-repeat center top #000;
+	width: 100%;
+	}
+
+span.info {font-size: 0.9em;}
+
+.print {display: none;}
+
+/*
+*** Gen Pop */
+.inset {background: #FbFbFb; padding: 20px; border-radius: 5px; -moz-border-radius: 5px; border:1px solid #EdEeEe; overflow: hidden;}
+
+a.signupNow {display: block; width: 152px; height: 60px; text-indent: -9999px; }
+a.noPicks {display: block; width: 152px; height: 60px; text-indent: -9999px; background: url(../_images/btnNoPicks.jpg) no-repeat;}
+	
+.tinyMCEWide {width:580px; height:250px; }
+
+div.divider {display: block; width: 100%; height: 1px; background: #e5e5e5;  margin-bottom: 20px; line-height: 1px;}
+
+
+
+/* Buttons */
+.btn {cursor: pointer;  border-radius: 3px; -moz-border-radius: 3px; outline:0 !important;
+	text-decoration:none !important;  border-bottom: 0;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3); -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3); 
+ 	text-shadow: 0 -1px 1px rgba(0,0,0,0.3); font-weight: bold; letter-spacing: 0.03em;
+ 	font-size: 11px; padding: 7px 8px 0; height: 18px; line-height: 100% !important;
+ 	}
+	input.btn {height: 26px; padding: 0 8px 2px 8px !important;}
+	a.btn {display:inline-block; }
+	.btn:hover {text-decoration:none !important; }
+
+.btnPosBig {font-size: 15px; padding: 10px 20px 0; height: 25px; }
+	.btnPosBig:hover {text-decoration: none !important;}	
+
+
+/* Banners */
+.statusBox{ padding:5px 0px; position: fixed; top:0; left: 0px; overflow: hidden; z-index: 10000; width: 100%; display: none;}
+	.statusBox h3{color:#111 !important; margin:0 0 0 55px; line-height: 150%; font-weight: bold !important; font-size: 13px !important; }
+	.statusBox p{color:#111; margin:0 0 0 55px !important; font-size: 11px;
+    line-height: 150%;  margin-bottom: 20px; }
+	.statusBox a{color:#111; text-decoration: underline;}
+	.statusBox a:hover{text-decoration: none;}
+
+.statusAttention {background: #FFDD00; border-bottom: 2px solid #997700;}
+	.statusAttention .statusInner {background:url(/images/ico_status_attention.png) no-repeat 15px center;} 
+		.statusAttention h3 {margin-left: 40px !important;}
+		.statusAttention p {margin-left: 40px !important;}
+		
+.statusError {background: #F5C5C8; border-bottom: 2px solid #EC9B9B;}
+	.statusError .statusInner {background:url(/images/ico_status_error.png) no-repeat 15px center;} 
+
+.statusSuccess {background: #C8F5B4; border-bottom: 2px solid #72CB67;}
+	.statusSuccess .statusInner {background:url(/images/ico_status_success.png) no-repeat 15px center;} 
+
+.statusInfo {background: #C7D7F0; border-bottom: 2px solid #50B0EC;}
+	.statusInfo .statusInner {background:url(/images/ico_status_info.png) no-repeat 15px center;} 
+
+.statusVisable {display: block !important;}
+
+
+.statusBoxInPage{ padding:10px 0px; overflow: hidden; width: 100%; border-radius: 5px; -moz-border-radius: 5px; border-bottom-width: 1px;}
+	.statusBoxInPage h3{color:#111 !important; margin:0 0 0 55px; line-height: 32px; font-weight: bold !important; font-size: 15px !important; }
+	.statusBoxInPage p{
+		font-size: 1.2em;
+		line-height: 150%;
+		margin: 0 0 0 60px;
+		width: 550px;
+	}
+
+	.statusBoxInPage a{color:#111 !important; text-decoration: underline;}
+	.statusBoxInPage a:hover{text-decoration: none;}
+
+.success{background:#70ba4b; color:#fff; padding:10px; border:1px solid #3f751f; margin:10px 0; font-size: 1.3em;  border-radius: 3px; -moz-border-radius: 3px;}
+
+
+/*
+*** Mast */
+div#mastWrp {display: block; height:102px;   }
+	div#mast {height: 100%;}
+
+	div#mast div#topBanner {display: block; width: 728px; height: 90px; margin-top: 6px;}
+		div#mast div#topBanner img {width: 728px; height: 90px; }
+
+/*
+*** Brand */
+div#brandWrp {height: 198px; display: block; overflow: hidden;}
+	table#brandCenter {display: block; height: 170px;}
+		table#brandCenter tr td {height: 170px;}
+	
+	div#brandLogo {margin-top: 14px; height: 170px; width: 570px; display: block; overflow: hidden;}
+	div#productLogo {display: block; height: 190px; width: 391px;}
+
+/*
+*** Content - Navigation */
+div#navWrp {height: 45px; display: block; border-bottom: 0;}
+	
+	/* Main Nav*/
+	ul#navMain {display: block;  height: 100%; width: 745px;}
+		ul#navMain li {height: 100%; line-height: 45px; font-size: 1.2em; font-weight: bold; float: left; position: relative;}
+			ul#navMain li a {display: block; height: 100%; text-transform: uppercase; padding: 0 10px; text-align: center; text-shadow: 0 -1px 0px #999; float: left;}
+	
+		/* Main SubNav */
+	ul#navMain li ul {position: absolute; top:45px; left:-9999px; width: 145px; z-index: 1000; }
+		ul#navMain ul li {height: 28px; text-indent: 0; width: 145px; border: 0; }
+			ul#navMain ul li a {background: none; border:0; font-size: 12px; height: 28px; width: 129px !important; line-height: 28px; padding: 0 8px; overflow: hidden;  text-align: left; font-weight: normal; text-transform: none; font-weight: normal; text-shadow: none; }
+	#navMain li:hover ul {left: -1px;}	
+	#navMain li:hover ul ul {left: -9999px;} 
+
+div#subnavWrp {display: block; overflow: hidden; margin-bottom: 5px;}
+	div#subnavWrp ul {font-size: 1.2em; overflow: hidden;}
+		div#subnavWrp ul li {float: left; display: inline-block;}
+			div#subnavWrp ul li a {display: block; padding: 5px 10px 8px; color:#fff;}
+			div#subnavWrp ul li.current a {font-weight: bold;}
+			div#subnavWrp ul li a:hover {text-decoration: underline;}
+
+
+	/* LogNav */
+	ul#navLogin {display: block; overflow: hidden; height: 100%; width: 245px;}
+		ul#navLogin li {height: 100%; line-height: 45px; font-size: 1.2em; font-weight: 500; float: right; display: inline;}
+			ul#navLogin li a {display: block; height: 100%; text-transform: uppercase; padding: 0 10px; text-align: center;float: left; } 
+
+/*
+*** Content */
+div#wrapper, div#wrapperFull {margin-bottom: 40px;  overflow: hidden;}
+	div#wrapperFull {background: #fff;}
+
+ div#colWrp {padding: 20px 14px 0px 20px; overflow: hidden; min-height: 660px; width: 966px;} 
+	div#wrapperFull div#colWrp {padding: 20px; overflow: hidden;}
+
+div#contentCol {width:630px; overflow: hidden; margin-bottom: 20px; }
+
+	.content h1 {font-size: 2em;  line-height: 130%;}
+	.content h2 {font-size: 1.6em; margin-bottom: 5px; line-height: 130%; }
+	.content h3 {font-size: 1.5em; color:#999; font-weight: normal;}
+	.content h4 {font-size: 1.3em; color:#666; margin-bottom: 5px; }
+	.content p {font-size: 1.2em; margin-bottom: 20px; line-height: 150%;}
+	.content p.halfMarBot {margin-bottom: 10px;}
+	.content a {text-decoration: underline;}
+	.content a:hover {text-decoration: none;}
+
+	.content ul, .content ol {font-size: 1.2em; line-height: 160%; margin-bottom: 20px; margin-left: 30px;}
+	.content ul li {list-style-type: disc; }
+	.content ol li {list-style-type: decimal}
+
+	.content p.info {font-size: 1.1em;}
+
+	ul.pageNav {margin: 5px 0 0 0; font-weight: bold; overflow: hidden; width: 100%; display: block; height: 20px;}
+		ul.pageNav li {list-style-type: none; float: left; padding: 0 4px; display: inline;}
+		ul.pageNav li + li {border-left:1px solid #999;}
+			ul.pageNav li a {text-decoration: none;}
+			ul.pageNav li a:hover {text-decoration: underline;}		
+
+table.genTable {width: 100%; }
+	table.genTable th {font-size: 1.2em; padding: 4px; line-height: 140%; text-align: left; text-transform: uppercase; background: #e0e0e0; color:#555; border-bottom: 1px solid #d7d7d7;}
+	table.genTable td {font-size: 1.2em; padding: 4px; line-height: 140%; background: #fff; border-bottom: 1px solid #dedede;}
+	table.genTable tr.even td {background: #f9f9f9;}
+	table.genTable a {color:#434444;}
+
+table.genTable td.leaguedescription {padding-left: 25px;}
+
+table.standings th {text-transform: none; padding: 4px;}
+
+.pageTitle {border-bottom: 1px solid #F1F0F0; margin-bottom: 10px; padding-bottom: 5px; overflow: hidden; width: 100%;}
+.pageTitle h1 span {font-size: 0.75em; color:#aaa; font-weight: normal; }
+
+div#rulesWrp p {margin-bottom: 0 !important;}
+label.rulesAccept {font-size: 1.3em;}
+
+/* a#printBracket {display: none;} */
+
+/*
+.sectionTitle {overflow: hidden;  margin-bottom: 10px; padding: 5px 10px;
+	border-radius: 5px; -moz-border-radius: 5px; border:1px solid #fce4b6;
+	background-color: #f7a22d;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #f7941d, #f8bb49);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+}
+.sectionTitle h2, .sectionTitle p {margin-bottom: 0; line-height: 30px; color: #222!important;}
+.sectionTitle h2 {font-size: 1.8em; text-transform: uppercase; font-weight: 500; }
+	.sectionTitle p {font-size: 1.3em;}
+*/
+
+div#roundDropDown select {font-size: 1.3em;}
+
+
+/* League Stangings */
+table.standingsLeague {margin-top: 5px;}
+table.standingsLeague tr th {padding-bottom:6px; color: #666666; text-align: left; font-size: 1.4em;}
+table.standingsLeague tr td {padding:4px 0; font-size: 1.2em;}
+	table.standingsLeague tr td a.arrLinkOrg  {margin-left: 10px}
+
+p.standingsSummary {font-size: 1.4em;}
+
+
+/*
+*** Player Stats */
+p#playRounds a.selected {text-decoration: none; font-weight: bold; cursor: default}
+div#playHolder {display: block; height: 185px;}
+
+
+/*
+*** Widgets - Mainly used on Dashboard */
+div.widgetBox div.widgetTitle {padding: 5px 10px; border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; overflow: hidden; color:#fff;}
+	div.widgetTitle h1 {color:#fff; font-size: 1.4em; text-shadow: 0px -1px 1px rgba(0,0,0,0.3);}
+	div.widgetTitle span.userListLink {background: url(/images/ico_excel.gif) left center no-repeat; padding-left: 20px; }
+	div.widgetTitle a.userListLink {color:#fff !important; }
+
+	div.widgetBody {background: #FBFBFB; padding: 10px 15px; border: 1px solid #EDEEEE; border-top:0; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; overflow: hidden}
+	div.widgetBody h2 {font-size: 1.3em;}
+	div.widgetBody h2 a  {color:#656565;}
+
+	div.widgetBodyTable { overflow: hidden}
+
+	div.partnerCallout {margin: 30px 0; overflow: hidden;}
+		div.partnerCallout div.left {display: block; width: 87px; height: 75px; text-align: center;}
+		div.partnerCallout div.right {display: block; width: 530px;}
+
+	img.widgetThumb {max-width: 275px; margin-bottom: 5px;}
+
+ul#chartSlide {
+	display: block;
+	height: 150px;
+	margin: 0;
+	width: 100%;
+}
+	ul#chartSlide li {
+		display: block;
+		height: 100%;
+		width: 100%;
+		list-style-type: none;
+	}
+
+div#slideNext, div#slidePrev {
+	display: block;
+	height: 20px;
+	width: 20px;
+}
+	div#slideNext a, div#slidePrev a {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+
+	div#slidePrev {
+		background: url(../_images/slidePrev.png) no-repeat;
+	}
+
+	div#slideNext {
+		background: url(../_images/slideNext.png) no-repeat;
+	}
+
+
+
+
+
+
+/*
+*** Sidebar */
+div#sidebar {width: 300px; overflow: hidden; color: #fff; margin-bottom: 20px;}
+	
+	div#sidebar h1 {font-size: 1.6em; font-weight: normal; padding-bottom: 10px; margin-bottom: 15px;}
+
+	div#userWrp {overflow: hidden; padding: 15px;  border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; width: 268px;}
+	div#userWrp img {
+		-moz-box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+		box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+		background: #dfdfdf;
+	}
+		
+	div#userWrp div#userInfo {width: 205px;}
+		div#userWrp div#userInfo h2 {font-size: 1.6em; margin:1px 0 5px; }
+			div#userWrp div#userInfo h2 span {font-size: 12px; margin-left: 3px;}
+			div#userWrp div#userInfo h2 span a {text-decoration: underline;}
+			
+			div#userInfo table tr td {font-size: 1.2em; padding-bottom: 3px;}
+				div#userInfo table tr td a {text-decoration: underline;}
+				div#userInfo table tr td a:hover {text-decoration: none;}
+
+	div.sbBox {clear: both; margin-bottom: 15px; padding-bottom: 15px; overflow: hidden;}
+		div.sbBox h2 {font-size: 1.2em; line-height: 140%;}
+		div.sbBox p {font-size: 1.2em; line-height: 140%;}
+			div.sbBox a:hover{text-decoration: underline;}
+		div.sbBox a.readmore {font-weight:bold; text-decoration: underline;}
+			div.sbBox a.readmore:hover {text-decoration: none;}
+			div.sbBox img.alignleft {margin: 0 10px 5px 0;}
+			div.sbBox img.stock {border: 0 !important; }
+	div#sidebar div.noMarBot {border-bottom: 0 !important; }
+
+		div.sbLogin label {font-size: 1.3em; margin-bottom: 5px; display: block; font-weight: bold}
+		div.sbLogin errWrp {display: block;}
+		div.sbLogin input.txtBox {margin-bottom: 15px; width: 260px;}
+	
+	p.sbLoginForgot {font-size: 1.3em; line-height: 28px;}
+
+/*
+*** Sidebar ADMIN */
+div#navAdminWrp {padding: 15px; border-radius: 5px; -moz-border-radius: 5px; }
+
+ul#navAdmin {font-size: 1.3em; overflow: hidden; width: 100%;}
+	ul#navAdmin li {clear: both; overflow: hidden; width: 100%;}
+	ul#navAdmin li.first {border-top: 0; padding-top: 0;}
+	ul#navAdmin li.last {border-bottom: 0; padding-bottom: 0;}
+		ul#navAdmin li img {width: 16px; height: 16px; float: left; padding: 8px 0;}
+		ul#navAdmin li a {padding: 8px 0; display: block; float: right; width: 245px; font-weight: 500; }
+
+
+
+
+
+/*
+*** Forms */
+input {background: #fff;}
+textarea {font-family: Arial, sans-serif;}
+
+
+.req {color:#838888; font-size: 0.9em; padding: 0 3px;}
+div.formRow {display: block; margin-bottom: 10px; padding-bottom: 10px; overflow: hidden; border-bottom: 1px solid #EdEdEd; width: 587px;}
+	div.formRow.noMarBot {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
+	div.formRow .info {line-height: 21px; margin-bottom: 10px;}
+	
+textarea, input.txtBox, input#survey_question_option_option_value {border: 1px solid #C4C4C4; background: #fff; font-size: 1.1em; padding: 3px; line-height: 1; margin: 1px 0;}
+select {font-size: 1.1em; padding: 2px 0 2px 4px; border: 1px solid #cfcfcf; background: #fff; }
+
+input.txtBox {width: 200px;}
+input.txtLong {width: 300px;}
+input.txtSmall {width: 35px;}
+
+input#survey_question_option_option_value {width: 175px;}
+
+input.txtBoxActive {
+-moz-box-shadow: 0px 0px 2px #99AACC;
+-webkit-box-shadow: 0px 0px 2px #99AACC;
+box-shadow: 0px 0px 2px #99AACC;
+border:1px solid #99AACC;
+}
+
+div.formRow label.formLab, div.formRow label.formLabBlank {font-size: 1.2em; line-height: 21px; margin-right: 10px; width: 160px; text-align: left; float:left; cursor:pointer; font-weight: bold; color:#838888}
+div.formRow label.formLab:hover {color:#737777;}
+
+label.formLabRight {font-size: 1.2em; line-height: 21px; cursor:pointer; font-weight: normal; color:#636666}
+label.formLabRight:hover {color:#737777;}
+
+label.formLabBlank {cursor:default;}
+
+div.optWrp {display: block; overflow: hidden; float: left; width: 415px;  }
+
+div.checkbox div {display: block; overflow: hidden; float: left; width: 100%;}
+div.checkbox div input, div.optWrp input {float: left; height: 22px; margin-right: 4px}
+div.checkbox div label, div.optWrp label {font-size: 1.1em; line-height: 22px; float: left; margin-right: 12px; cursor: pointer; color: #434444;}
+
+div.optInChecks {width: 100% !important;}
+ 	div.optInChecks label {width: 555px;}
+
+div.errWrp {float: left; width: 175px; color:#B41010; font-size: 1.1em; /* line-height: 24px; */ }
+
+ul.error_list {color:#B41010; font-size: 1.1em; line-height: 24px; padding-left: 10px;}
+
+.double_list_label {font-size: 1.1em; margin-bottom: 3px}
+.double_list_select, .double_list_select-selected {width: 190px;}
+
+
+div.shortFormWrp {display: block; width: 500px; overflow:hidden;  }
+	div.shortFormWrp label.formLab, div.shortFormWrp label.formLabBlank {width:130px;}
+	div.shortFormWrp div.errWrp {width: 140px;}
+	div.shortFormWrp div.optWrp {width: 315px;}
+
+div.formLabelBlank {float:left; padding-left: 170px;}
+
+a.helperTip img {margin-top: 1px;}
+
+div.helperTipContent {width: 250px; padding: 20px;}
+	div.helperTipContent p {line-height: 150%;}
+
+
+/*
+*** Edit Profile */
+#newAvatarWrp input {display: none;}
+#avatarList {display: block; overflow: hidden; width: 355px; }
+#newAvatarWrp img {border: 2px solid #FBFBFB;}
+#newAvatarWrp img.selected {border: 2px solid #E9841F;}
+
+/*
+*** Logos & Styles */
+
+ul#themeList {display: block;  margin: 0px;  }
+	ul#themeList li {float: left; list-style-type: none; display: block; width: 72px; text-align: center; border: 1px solid #FBFBFB; padding: 10px 5px;}
+	ul#themeList li.selected {border: 1px dashed #bbb; background: #fff; }
+	ul#themeList input {display: none;}
+	ul#themeList img { width: 50px; height: 50px;}
+
+
+
+
+
+
+/*
+*** News */
+/* div.article {border-bottom: 1px solid #F1F0F0; padding-bottom: 20px; margin-bottom: 20px; } */
+/* 	div.article h2 a {text-decoration: none;} */
+/* 	div.article h2 a:hover {text-decoration: underline;}	 */
+div.articles h2 {font-size: 1.4em;}
+	div.date {font-size: 1em; text-transform: uppercase; color:#aaa; font-weight:bold;  line-height: 160%;}
+	div.article div.date {margin-bottom: 10px;}
+
+
+/*
+*** Footer */
+div#footer {height: 71px; margin-bottom: 20px; position: relative;}
+
+	div#footer a {text-transform: uppercase;}
+
+	div#navFooterLeft, div#navFooterRight {position: absolute; width: 356px; top:25px; font-size: 1em; font-weight: bold; letter-spacing: 0.05em;}
+
+	div#navFooterLeft {text-align: right; left: 20px;}
+		div#navFooterLeft a {margin-left: 20px;}
+	div#navFooterRight {text-align: left; right: 10px;}
+		div#navFooterRight a {margin-right: 20px;}
+		
+	div#footer a#powerLink {display: block; width: 245px; height: 75px; text-indent: -9999px; position: absolute; top:0px; left:378px;}
+
+	
+	
+/*
+*** How To Play */
+img.playScreenshot {border: 1px solid #eee; width: 150px;}
+div.playText {display: block; width: 410px}
+
+
+.rulestext {height:300px; overflow: auto}
+
+
+	
+/*
+*** Scoreboard */
+.ncbscoreboard {
+  width: 259px;
+  height: 102px;
+  position: relative;
+  background: #17191B url(../_images/scoreboardBackground.png) top left no-repeat;
+}
+
+.ncbscoreboard .score {
+  width: 233px;
+  height: 58px;
+  float: left;
+  border-right:1px solid #747476;
+}
+
+.ncbscoreboard .scoreswrapper {width: 233px;height:58px; position:absolute; top:33px; left: 13px; overflow:hidden; }
+
+.ncbscoreboard .scores {
+  width: 5000px;
+  height: 119px;
+  color: #fff;
+  position:relative;
+}
+
+.ncbscoreboard .prev {width: 11px; height:100%; position:absolute; background:transparent url(../_images/scoreboardBtnPrev.png) top left no-repeat;}
+.ncbscoreboard .next {width: 11px; height:100%; right:0; position:absolute; background:transparent url(../_images/scoreboardBtnNext.png) top right no-repeat;}
+.ncbscoreboard .prev A, .ncbscoreboard .next A {color:#fff; }
+.ncbscoreboard .prev.disabled A, .ncbscoreboard .next.disabled A {color: #666;}
+.ncbscoreboard .prev A DIV, .ncbscoreboard .next A DIV {width:100%; height:102px}
+.ncbscoreboard .prev.disabled, .ncbscoreboard .next.disabled {background-image:none}
+
+
+.ncbscoreboard .scorename {float:left; width: 108px; font-size: 10px; font-weight:bold; height: 11px; overflow:hidden; text-shadow:1px 1px 1px #000; text-align: center; margin-bottom: 5px;}
+
+.ncbscoreboard .scoretext {text-align:right; float:left; width: 108px; font-size: 22px; font-weight:normal; margin-bottom: 8px; overflow:hidden; text-shadow:1px 1px 1px #000; text-align: center; letter-spacing: 0.05em;}
+.ncbscoreboard .scoretime {clear:both;font-size: 11px; height: 15px; overflow:hidden; width: 100%; text-align: center}
+
+
+.ncbscoreboard .scoreLeft {display: block; width: 108px; float: left; }
+.ncbscoreboard .scoreRight {display: block; width: 108px; float: right;}
+
+.ncbscoreboard .vsBlock {display: block; width: 12px; float: left; line-height: 30px; color:#aaa;}
+
+/*
+*** 404 ONLY */
+#e404 {background: url(../_images/404bg.png) top repeat-x #262626;}
+	div#logo404 {background: url(../_images/404logo.png) no-repeat; display: block; width: 390px; height: 188px; margin-top: 30px;}
+/* div#wrapper404 {min-height: 600px;} */
+
+div#msg404wrp {display: block; height:165px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-top: 40px;}
+	div#msg404 {display: block; height:100%; width: 654px; background: url(../_images/404basketball.png) no-repeat center left;}
+		div#msg404 h1 {margin-left: 243px; padding-top: 30px; padding-bottom:5px; color:#c71e1e;font-size:42px; letter-spacing: 0.06em; }
+		div#msg404 h2 {margin-left: 243px; font-size: 14px; color:#ddd; text-transform: uppercase; padding-bottom:5px;}	
+		div#msg404 p {margin-left: 243px; font-size: 12px; line-height: 140%; color:#ddd}		
+		div#msg404 a {color: #ddd; text-decoration: underline;}

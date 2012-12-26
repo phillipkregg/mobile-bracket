@@ -1,339 +1,622 @@
 <!DOCTYPE html>
 
 <html>
+
     <head>
-        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
-        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">-->
-        <link rel="stylesheet" type="text/css" href="javascripts/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.css">
-        <link rel="stylesheet/less" media="all" href="stylesheets/manifest.less">
+        <link rel="stylesheet/less" href="css/themes/fbpickem/_css/fbpickem.less" media="all">
 
-        <!--<script type="text/javascript" src="javascripts/jquery.js"></script>-->
-        <script type="text/javascript" src="javascripts/jquery-1.7.2.js"></script>
-        <script type="text/javascript" src="javascripts/jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
-
-        <script type="text/javascript" src="javascripts/bootstrap.js"></script>
-        <script type="text/javascript" src="javascripts/less.js"></script>
-        <script type="text/javascript" src="javascripts/bracket.js"></script>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <script>
-
-            $(document).ready(function() {
-                //$("#map_container").affix();
-                //$('#navbar').scrollspy();
-
-                bracketNav();
+        <!-- Bracket specific styles -->
 
 
-                function bracketNav() {
+        <link type="text/css" rel="stylesheet" href="css/themes/fbpickem/bracket/_css/cbbtourney.css">
+        <!--<link type="text/css" rel="stylesheet" href="css/themes/fbpickem/bracket/_css/main.css">-->
 
-                    var nextButton = $("#bracket_next");
-                    var backButton = $("#bracket_back");
-
-                    var bracketArray = [];
-
-                    $(".bracketColumn1").children().each(function() {
-                        bracketArray.push(this);
-                        //console.log(bracketArray);
-
-                        //console.log($(this).index());
-
-                    });
-
-                    console.log(bracketArray);
-
-                    $(nextButton).bind("click", function() {
-                       $(".bracketColumn1").scrollTop() + 200;
-                    });
+        <link media="all" rel="stylesheet/less" href="css/themes/fbpickem/bracket/_css/overrides.less">
 
 
 
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="js/less.js"></script>
 
-                } // end bracketNav function
+        <!-- Bracket specific javascripts -->
+        <script type="text/javascript" src="css/themes/fbpickem/bracket/_js/bracket.js"></script>
+        <script type="text/javascript" src="js/mobile-bracket.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
 
-
-            });
-
-        </script>
 
     </head>
 
-    <body data-spy="scroll"  data-target="#navbar">
 
-
-        <div class="container">
-            <div id="navbar">
-                <ul class="nav">
-                    <li><a class="" href="#south_group1"></a></li>
-                    <li><a class="" href="#south_group2"></a></li>
-                    <li><a class="" href="#south_group3"></a></li>
-                    <li><a class="" href="#south_group4"></a></li>
-                    <li><a class="" href="#east_group1"></a></li>
-                    <li><a class="" href="#east_group2"></a></li>
-                    <li><a class="" href="#east_group3"></a></li>
-                    <li><a class="" href="#east_group4"></a></li>
-                </ul>
-                <ul class="nav">
-                    <li><a class="" href="#"></a></li>
-                    <li><a class="" href="#"></a></li>
-                    <li><a class="" href="#"></a></li>
-                    <li><a class="" href="#"></a></li>
-                    <li><a class="" href="#"></a></li>
-                </ul>
-
-                <div class="" id="bracket_nav">
-                    <div class="bracket_button" id="bracket_back">
-                        <h4>Back</h4>
-                    </div>
-                    <div class="bracket_button" id="bracket_next">
-                        <h4>Next</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <body data-spy="scroll" data-target="#map">
+        <h1>Body Starts</h1>
 
 
 
-        <div class="container main no-shadow" >
+        <div class="topdrawer"></div>
+        <div class="pulldowntabs"></div>
 
-            <div class="bracketLeft">
+        <div class="body">
+            <h3>Body Class Starts</h3>
+            <div class="body-wings">
+                <div class="blue_block">body wings</div>
+                <header>
+                    <div class="hdr-wings">
 
-                <div class="bracketColumn1">
+                        <div class="container">
+                            <div class="red_block">Header wings</div>
 
-                    <div id="south_group1" class="box">
+                            <nav>
+                                <div id="nav-wrapper" class="clearfix">
+                                    <ul id="main-nav" class="topnav">
+                                        <li class="navitem current"><a href="/">Home</a></li>
 
-                        <div class="round1">
-                            <div class="statcast">
-                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=1">
-                                    <div class="statcastGraphic"></div>
-                                </a>
+
+                                        <li class="navitem dropper"><a class="drop-link" href="/news">News</a> <a class="drop-toggle">News</a>
+                                            <div class="dropnav container">
+                                                <div class="dropwrap">
+
+                                                    <ul class="droplinks">
+                                                        <li><a href="/news/sports">Sports News <span class="noshow">powered by Athlon Sports</span></a></li>
+                                                    </ul>
+                                                    <div class="dropbody">
+
+
+                                                        <div class="dropcol">
+                                                            <hgroup><h3>Sports News powered by Athlon Sports</h3></hgroup>
+                                                            <article>
+                                                                <h3><a href="/news/showSports/id/1340">Pittsburgh Steelers vs. Dallas Cowboys Preview and Prediction</a>
+                                                                </h3>
+                                                                <p>
+                                                                    The Pittsburgh Steelers and the Dallas Cowboys will each be looking to stay above .500 and in the thick of the playoff hunt when they face off this afternoon at 4:25 p.m. ET on CBS. The Steelers...
+                                                                </p><p><a href="/news/showSports/id/1340" class="read-more">Read More</a></p>
+                                                            </article>
+                                                            <article>
+                                                                <h3><a href="/news/showSports/id/1341">San Francisco 49ers vs. New England Patriots Preview and Prediction</a>
+                                                                </h3>
+                                                                <p>
+                                                                    The San Francisco 49ers and New England Patriots face off tonight at 8:20 p.m. ET on NBC in what could potentially be a preview of Super Bowl XLVII. The 49ers (9-3-1) are trying to hold Seattle ...
+                                                                </p><p><a href="/news/showSports/id/1341" class="read-more">Read More</a></p>
+                                                            </article>
+                                                            <article>
+                                                                <h3><a href="/news/showSports/id/1336">NFL Picks Against the Spread: Week 15</a>
+                                                                </h3>
+                                                                <p>
+                                                                    A betting preview of every game (against the spread) on Sunday and Monday in Week 15.
+
+
+                                                                    Locks of the Week
+                                                                    Rematches of heated rivalries, a neutral site home game in Canada and a nine-gam...
+                                                                </p><p><a href="/news/showSports/id/1336" class="read-more">Read More</a></p>
+                                                            </article>
+                                                            <article>
+                                                                <h3><a href="/news/showSports/id/1337">5 Injuries That Altered the NFL Season</a>
+                                                                </h3>
+                                                                <p>
+                                                                    When Robert Griffin III limped off the field last Sunday, it figured to be a devastating injury for the Washington Redskins. He’s their most dynamic player and the reason they’ve made a race...
+                                                                </p><p><a href="/news/showSports/id/1337" class="read-more">Read More</a></p>
+                                                            </article>
+                                                        </div>
+
+
+
+
+                                                    </div>					</div>
+                                            </div>
+                                        </li>
+                                        <li class="navitem"><a href="/prizes">Prizes</a></li>
+                                        <li class="navitem"><a href="/support">Support</a></li>
+                                    </ul>
+                                    <ul id="alt-nav" class="topnav">
+                                        <li class="navitem"><a href="/register">Sign Up to Play</a></li>
+                                        <li class="navitem"><a href="/login">Log In to Play</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div> <!-- end header wings -->
+
+
+                </header>
+
+                <div class="sub-body">
+                    <div class="wings">
+
+                        <div class="container main home">
+                            <div class="red_block"><h3>This is the beginning of the container home div</h3></div>
+
+                            <div class="row twelve-col">
+                                <div class="blue_block"><h4>Start the row definition</h4></div>
+                                <div class="column col-12">
+                                    <div class="blue_block"><h4>start col-12</h4></div>
+                                </div>
                             </div>
 
-                            <div id="location1" class="teamContainer">
+                            <div class="row twelve-col">
+                                <div class="column col-12">
+                                    <div id="navbar">
+                                        <ul class="nav">
+                                            <li><a class="" href="#south_group1"></a></li>
+                                            <li><a class="" href="#south_group2"></a></li>
+                                            <li><a class="" href="#south_group3"></a></li>
+                                            <li><a class="" href="#south_group4"></a></li>
+                                            <li><a class="" href="#east_group1"></a></li>
+                                            <li><a class="" href="#east_group2"></a></li>
+                                            <li><a class="" href="#east_group3"></a></li>
+                                            <li><a class="" href="#east_group4"></a></li>
+                                        </ul>
+                                        <ul class="nav">
+                                            <li><a class="" href="#"></a></li>
+                                            <li><a class="" href="#"></a></li>
+                                            <li><a class="" href="#"></a></li>
+                                            <li><a class="" href="#"></a></li>
+                                            <li><a class="" href="#"></a></li>
+                                        </ul>
 
-                                <div class="pickableTeam" rel="1">
-                                    <div class="seed">1
+                                        <div class="" id="bracket_nav">
+                                            <div class="bracket_button" id="bracket_back">
+                                                <h4>Back</h4>
+                                            </div>
+                                            <div class="bracket_button" id="bracket_next">
+                                                <h4>Next</h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="team">Kentucky</div>
                                 </div>
-                                <div class="location_id">1</div>
                             </div>
 
-                            <div id="location2" class="teamContainer noMargin">	<div class="pickableTeam" rel="2">
-                                <div class="seed">16</div>
-                                <div class="team">Western Ky</div>
-                            </div>
-                                <div class="location_id">2</div>
-                            </div>
 
-                        </div>
 
-                        <div class="round1">
-                            <div class="statcast">
-                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=3">
-                                    <div class="statcastGraphic"></div>
-                                </a>
-                            </div>
 
-                            <div id="location3" class="teamContainer">
-                                <div class="pickableTeam" rel="3">
-                                    <div class="seed">8</div>
-                                    <div class="team">Iowa St</div>
+                            <div class="row twelve-col">
+                                <div class="column col-6">
+
+
+
+                                <div id="mobile_nav" class="container visible-phone">
+                                    <div id="arrow_left">
+                                        <a class="round_arrow">left</a>
+                                    </div>
+                                    <ul id="round_container">
+                                        <li class="mobile_round">
+                                            <a >
+                                                ROUND 1
+                                            </a>
+                                        </li>
+                                        <li class="mobile_round">
+                                            <a >
+                                                ROUND 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div id="arrow_right">
+                                        <a >right</a>
+                                    </div>
                                 </div>
-                                <div class="location_id">3</div></div>
 
-                            <div id="location4" class="teamContainer noMargin">
-                                <div class="pickableTeam" rel="4">
-                                    <div class="seed">9</div>
-                                    <div class="team">Connecticut</div>
+                                <div class="bracketLeft" id="regionMidwest">
+
+
+                                <!--************ SOUTH COLUMN 1 ***************-->
+                                <div class="bracketColumn1">
+
+                                    <div id="south_group1">
+
+                                        <div class="round1">
+                                            <div class="statcast">
+                                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=1">
+                                                    <div class="statcastGraphic"></div>
+                                                </a>
+                                            </div>
+                                            <div id="location1" class="teamContainer">
+                                                <div class="pickableTeam" rel="1">
+                                                    <div class="seed">1
+                                                    </div>
+                                                    <div class="team">Kentucky</div>
+                                                </div>
+                                                <div class="location_id">1</div>
+                                            </div>
+
+                                            <div id="location2" class="teamContainer noMargin">	<div class="pickableTeam" rel="2">
+                                                <div class="seed">16</div>
+                                                <div class="team">Western Ky</div>
+                                            </div>
+                                                <div class="location_id">2</div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div id="south_group2">
+                                        <div class="round1">
+                                        <div class="statcast">
+                                            <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=3">
+                                                <div class="statcastGraphic"></div>
+                                            </a>
+                                        </div>
+
+                                        <div id="location3" class="teamContainer">
+                                            <div class="pickableTeam" rel="3">
+                                                <div class="seed">8</div>
+                                                <div class="team">Iowa St</div>
+                                            </div>
+                                            <div class="location_id">3</div></div>
+
+                                        <div id="location4" class="teamContainer noMargin">	<div class="pickableTeam" rel="4">		<div class="seed">9</div>		<div class="team">Connecticut</div>	</div>	<div class="location_id">4</div></div>
+                                    </div>
+                                    </div>
+
+
+                                    <div id="south_group3">
+                                        <div class="round1">
+
+                                            <div class="statcast">
+                                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=5">
+                                                    <div class="statcastGraphic"></div>
+                                                </a>
+                                            </div>
+
+                                            <div id="location5" class="teamContainer">
+                                                <div class="pickableTeam" rel="5">
+                                                    <div class="seed">5</div>
+                                                    <div class="team">Wichita St</div>
+                                                </div>
+                                                <div class="location_id">5</div>
+                                            </div>
+
+                                            <div id="location6" class="teamContainer noMargin">
+                                                <div class="pickableTeam" rel="6">
+                                                    <div class="seed">12</div>
+                                                    <div class="team">VCU</div>
+                                                </div>
+                                                <div class="location_id">6</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div id="south_group4">
+                                        <div class="round1">
+                                            <div class="statcast">
+                                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=7">
+                                                    <div class="statcastGraphic"></div>
+                                                </a>
+                                            </div>
+
+                                            <div id="location7" class="teamContainer">
+                                                <div class="pickableTeam" rel="7">
+                                                    <div class="seed">4</div>
+                                                    <div class="team">Indiana</div>
+                                                </div>
+                                                <div class="location_id">7</div>
+                                            </div>
+
+                                            <div id="location8" class="teamContainer noMargin">
+                                                <div class="pickableTeam" rel="8">
+                                                    <div class="seed">13</div>
+                                                    <div class="team">New Mexico St</div>
+                                                </div>
+                                                <div class="location_id">8</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="round1">
+                                        <div class="statcast">
+                                            <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=9">
+                                                <div class="statcastGraphic"></div>
+                                            </a>
+                                        </div>
+                                        <div id="location9" class="teamContainer">
+                                            <div class="pickableTeam" rel="9">
+                                                <div class="seed">6</div>
+                                                <div class="team">UNLV</div>
+                                            </div>
+                                            <div class="location_id">9</div>
+                                        </div>
+                                        <div id="location10" class="teamContainer noMargin">
+                                            <div class="pickableTeam" rel="10">
+                                                <div class="seed">11</div>
+                                                <div class="team">Colorado</div>
+                                            </div>
+                                            <div class="location_id">10</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="round1">
+                                        <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=11">
+                                            <div class="statcastGraphic"></div>
+                                        </a></div>
+
+                                        <div id="location11" class="teamContainer">
+                                            <div class="pickableTeam" rel="11">
+                                                <div class="seed">3</div>
+                                                <div class="team">Baylor</div>
+                                            </div>
+                                            <div class="location_id">11</div>
+                                        </div>
+
+                                        <div id="location12" class="teamContainer noMargin">
+                                            <div class="pickableTeam" rel="12">
+                                                <div class="seed">14</div>
+                                                <div class="team">S Dakota St</div>
+                                            </div>	<div class="location_id">12</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="round1">
+                                        <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=13">
+                                            <div class="statcastGraphic"></div>
+                                        </a></div>
+
+                                        <div id="location13" class="teamContainer">
+                                            <div class="pickableTeam" rel="13">
+                                                <div class="seed">7</div>
+                                                <div class="team">Notre Dame</div>
+                                            </div>
+                                            <div class="location_id">13</div>
+                                        </div>
+
+                                        <div id="location14" class="teamContainer noMargin">
+                                            <div class="pickableTeam" rel="14">
+                                                <div class="seed">10</div>
+                                                <div class="team">Xavier</div>
+                                            </div>
+                                            <div class="location_id">14</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="round1 noMargin">
+                                        <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=15">
+                                            <div class="statcastGraphic"></div>
+                                        </a></div>
+                                        <div id="location15" class="teamContainer">	<div class="pickableTeam" rel="15">		<div class="seed">2</div>		<div class="team">Duke</div>	</div>	<div class="location_id">15</div></div>
+                                        <div id="location16" class="teamContainer noMargin">	<div class="pickableTeam" rel="16">		<div class="seed">15</div>		<div class="team">Lehigh</div>	</div>	<div class="location_id">16</div></div>
+                                    </div>
                                 </div>
-                                <div class="location_id">4</div>
-                            </div>
-                        </div>
+                                <!-- bracketColumn1 -->
 
 
-                    </div>
 
-                    <div id="south_group2" class="box">
 
-                        <div class="round1">
-
-                            <div class="statcast">
-                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=5">
-                                    <div class="statcastGraphic"></div>
-                                </a>
-                            </div>
-
-                            <div id="location5" class="teamContainer">
-                                <div class="pickableTeam" rel="5">
-                                    <div class="seed">5</div>
-                                    <div class="team">Wichita St</div>
+                                <!--************ SOUTH COLUMN 2 ***************-->
+                                <div class="bracketColumn2">
+                                    <div class="round2">
+                                        <div id="location65" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="1">		<div class="seed"></div>		<div class="team">Kentucky</div>	</div>	<div class="location_id">65</div>	<input type="hidden" name="loc65id" id="loc65id" value="1" class="hiddenPicks"></div>
+                                        <div id="location66" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="4">		<div class="seed"></div>		<div class="team">Connecticut</div>	</div>	<div class="location_id">66</div>	<input type="hidden" name="loc66id" id="loc66id" value="4" class="hiddenPicks"></div>
+                                    </div>
+                                    <div class="round2">
+                                        <div id="location67" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="6">		<div class="seed"></div>		<div class="team">VCU</div>	</div>	<div class="location_id">67</div>	<input type="hidden" name="loc67id" id="loc67id" value="6" class="hiddenPicks"></div>
+                                        <div id="location68" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="7">		<div class="seed"></div>		<div class="team">Indiana</div>	</div>	<div class="location_id">68</div>	<input type="hidden" name="loc68id" id="loc68id" value="7" class="hiddenPicks"></div>
+                                    </div>
+                                    <div class="round2">
+                                        <div id="location69" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="9">		<div class="seed"></div>		<div class="team">UNLV</div>	</div>	<div class="location_id">69</div>	<input type="hidden" name="loc69id" id="loc69id" value="9" class="hiddenPicks"></div>
+                                        <div id="location70" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="11">		<div class="seed"></div>		<div class="team">Baylor</div>	</div>	<div class="location_id">70</div>	<input type="hidden" name="loc70id" id="loc70id" value="11" class="hiddenPicks"></div>
+                                    </div>
+                                    <div class="round2 noMargin">
+                                        <div id="location71" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="13">		<div class="seed"></div>		<div class="team">Notre Dame</div>	</div>	<div class="location_id">71</div>	<input type="hidden" name="loc71id" id="loc71id" value="13" class="hiddenPicks"></div>
+                                        <div id="location72" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="15">		<div class="seed"></div>		<div class="team">Duke</div>	</div>	<div class="location_id">72</div>	<input type="hidden" name="loc72id" id="loc72id" value="15" class="hiddenPicks"></div>
+                                    </div>
                                 </div>
-                                <div class="location_id">5</div>
-                            </div>
+                                <!-- bracketColumn2 -->
 
-                            <div id="location6" class="teamContainer noMargin">
-                                <div class="pickableTeam" rel="6">
-                                    <div class="seed">12</div>
-                                    <div class="team">VCU</div>
+
+                                <!--************ SOUTH COLUMN 3 ***************-->
+                                <div class="bracketColumn3">
+                                    <div class="round3">
+                                        <div id="location97" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="1">		<div class="seed"></div>		<div class="team">Kentucky</div>	</div>	<div class="location_id">97</div>	<input type="hidden" name="loc97id" id="loc97id" value="1" class="hiddenPicks"></div>
+                                        <div id="location98" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="6">		<div class="seed"></div>		<div class="team">VCU</div>	</div>	<div class="location_id">98</div>	<input type="hidden" name="loc98id" id="loc98id" value="6" class="hiddenPicks"></div>
+                                    </div>
+                                    <div class="round3 noMargin">
+                                        <div id="location99" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="11">		<div class="seed"></div>		<div class="team">Baylor</div>	</div>	<div class="location_id">99</div>	<input type="hidden" name="loc99id" id="loc99id" value="11" class="hiddenPicks"></div>
+                                        <div id="location100" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="15">		<div class="seed"></div>		<div class="team">Duke</div>	</div>	<div class="location_id">100</div>	<input type="hidden" name="loc100id" id="loc100id" value="15" class="hiddenPicks"></div>
+                                    </div>
                                 </div>
-                                <div class="location_id">6</div>
-                            </div>
+                                <!-- bracketColumn3 -->
 
-                        </div>
-
-                        <div class="round1">
-                            <div class="statcast">
-                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=7">
-                                    <div class="statcastGraphic"></div>
-                                </a>
-                            </div>
-
-                            <div id="location7" class="teamContainer">
-                                <div class="pickableTeam" rel="7">
-                                    <div class="seed">4</div>
-                                    <div class="team">Indiana</div>
+                                <!--************ SOUTH COLUMN 4 ***************-->
+                                <div class="bracketColumn4">
+                                    <div class="round4 noMargin">
+                                        <div id="location113" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="1">		<div class="seed"></div>		<div class="team">Kentucky</div>	</div>	<div class="location_id">113</div>	<input type="hidden" name="loc113id" id="loc113id" value="1" class="hiddenPicks"></div>
+                                        <div id="location114" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="11">		<div class="seed"></div>		<div class="team">Baylor</div>	</div>	<div class="location_id">114</div>	<input type="hidden" name="loc114id" id="loc114id" value="11" class="hiddenPicks"></div>
+                                    </div>
                                 </div>
-                                <div class="location_id">7</div>
-                            </div>
+                                <!-- bracketColumn4 -->
 
-                            <div id="location8" class="teamContainer noMargin">
-                                <div class="pickableTeam" rel="8">
-                                    <div class="seed">13</div>
-                                    <div class="team">New Mexico St</div>
+                                <!--************ SOUTH COLUMN 5 ***************-->
+                                <div class="bracketColumn5">
+                                    <div class="round5 noMargin">
+                                        <div id="location121" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="1">		<div class="seed"></div>		<div class="team">Kentucky</div>	</div>	<div class="location_id">121</div>	<input type="hidden" name="loc121id" id="loc121id" value="1" class="hiddenPicks"></div>
+                                    </div>
                                 </div>
-                                <div class="location_id">8</div>
-                            </div>
+                                <!-- bracketColumn5 -->
 
-                        </div>
-
-                    </div>
-
-                    <div id="south_group3" class="box">
-                        <div class="round1">
-                            <div class="statcast">
-                                <a class="fancybox" href="/play/stats?round_id=1&amp;team_id=9">
-                                    <div class="statcastGraphic"></div>
-                                </a>
-                            </div>
-                            <div id="location9" class="teamContainer">
-                                <div class="pickableTeam" rel="9">
-                                    <div class="seed">6</div>
-                                    <div class="team">UNLV</div>
+                                <div class="regionName" id="regionTopLeft">
+                                    South
                                 </div>
-                                <div class="location_id">9</div>
-                            </div>
-                            <div id="location10" class="teamContainer noMargin">
-                                <div class="pickableTeam" rel="10">
-                                    <div class="seed">11</div>
-                                    <div class="team">Colorado</div>
+                                <!-- regionTopLeft -->
+
+
                                 </div>
-                                <div class="location_id">10</div>
-                            </div>
-                        </div>
 
-                        <div class="round1">
-                            <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=11">
-                                <div class="statcastGraphic"></div>
-                            </a></div>
 
-                            <div id="location11" class="teamContainer">
-                                <div class="pickableTeam" rel="11">
-                                    <div class="seed">3</div>
-                                    <div class="team">Baylor</div>
+
+
+
+
+
                                 </div>
-                                <div class="location_id">11</div>
+                                <div class="column col-6">
+
+
+
+                                    <div class="bracketRight" id="regionEast">
+                                        <div class="bracketColumn1">
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=33">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location33" class="teamContainer">	<div class="pickableTeam" rel="33">		<div class="seed">1</div>		<div class="team">Syracuse</div>	</div>	<div class="location_id">33</div></div>
+                                                <div id="location34" class="teamContainer noMargin">	<div class="pickableTeam" rel="34">		<div class="seed">16</div>		<div class="team">UNC Asheville</div>	</div>	<div class="location_id">34</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=35">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location35" class="teamContainer">	<div class="pickableTeam" rel="35">		<div class="seed">8</div>		<div class="team">Kansas St</div>	</div>	<div class="location_id">35</div></div>
+                                                <div id="location36" class="teamContainer noMargin">	<div class="pickableTeam" rel="36">		<div class="seed">9</div>		<div class="team">Southern Miss</div>	</div>	<div class="location_id">36</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=37">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location37" class="teamContainer">	<div class="pickableTeam" rel="37">		<div class="seed">5</div>		<div class="team">Vanderbilt</div>	</div>	<div class="location_id">37</div></div>
+                                                <div id="location38" class="teamContainer noMargin">	<div class="pickableTeam" rel="38">		<div class="seed">12</div>		<div class="team">Harvard</div>	</div>	<div class="location_id">38</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=39">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location39" class="teamContainer">	<div class="pickableTeam" rel="39">		<div class="seed">4</div>		<div class="team">Wisconsin</div>	</div>	<div class="location_id">39</div></div>
+                                                <div id="location40" class="teamContainer noMargin">	<div class="pickableTeam" rel="40">		<div class="seed">13</div>		<div class="team">Montana</div>	</div>	<div class="location_id">40</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=41">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location41" class="teamContainer">	<div class="pickableTeam" rel="41">		<div class="seed">6</div>		<div class="team">Cincinnati</div>	</div>	<div class="location_id">41</div></div>
+                                                <div id="location42" class="teamContainer noMargin">	<div class="pickableTeam" rel="42">		<div class="seed">11</div>		<div class="team">Texas</div>	</div>	<div class="location_id">42</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=43">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location43" class="teamContainer">	<div class="pickableTeam" rel="43">		<div class="seed">3</div>		<div class="team">Florida St</div>	</div>	<div class="location_id">43</div></div>
+                                                <div id="location44" class="teamContainer noMargin">	<div class="pickableTeam" rel="44">		<div class="seed">14</div>		<div class="team">St Bonaventure</div>	</div>	<div class="location_id">44</div></div>
+                                            </div>
+                                            <div class="round1">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=45">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location45" class="teamContainer">	<div class="pickableTeam" rel="45">		<div class="seed">7</div>		<div class="team">Gonzaga</div>	</div>	<div class="location_id">45</div></div>
+                                                <div id="location46" class="teamContainer noMargin">	<div class="pickableTeam" rel="46">		<div class="seed">10</div>		<div class="team">West Virginia</div>	</div>	<div class="location_id">46</div></div>
+                                            </div>
+                                            <div class="round1 noMargin">
+                                                <div class="statcast"><a class="fancybox" href="/play/stats?round_id=1&amp;team_id=47">
+                                                    <div class="statcastGraphic"></div>
+                                                </a></div>
+                                                <div id="location47" class="teamContainer">	<div class="pickableTeam" rel="47">		<div class="seed">2</div>		<div class="team">Ohio St</div>	</div>	<div class="location_id">47</div></div>
+                                                <div id="location48" class="teamContainer noMargin">	<div class="pickableTeam" rel="48">		<div class="seed">15</div>		<div class="team">Loyola (MD)</div>	</div>	<div class="location_id">48</div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bracketColumn2">
+                                            <div class="round2">
+                                                <div id="location81" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="33">		<div class="seed"></div>		<div class="team">Syracuse</div>	</div>	<div class="location_id">81</div>	<input type="hidden" name="loc81id" id="loc81id" value="33" class="hiddenPicks"></div>
+                                                <div id="location82" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="36">		<div class="seed"></div>		<div class="team">Southern Miss</div>	</div>	<div class="location_id">82</div>	<input type="hidden" name="loc82id" id="loc82id" value="36" class="hiddenPicks"></div>
+                                            </div>
+                                            <div class="round2">
+                                                <div id="location83" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="37">		<div class="seed"></div>		<div class="team">Vanderbilt</div>	</div>	<div class="location_id">83</div>	<input type="hidden" name="loc83id" id="loc83id" value="37" class="hiddenPicks"></div>
+                                                <div id="location84" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="39">		<div class="seed"></div>		<div class="team">Wisconsin</div>	</div>	<div class="location_id">84</div>	<input type="hidden" name="loc84id" id="loc84id" value="39" class="hiddenPicks"></div>
+                                            </div>
+                                            <div class="round2">
+                                                <div id="location85" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="41">		<div class="seed"></div>		<div class="team">Cincinnati</div>	</div>	<div class="location_id">85</div>	<input type="hidden" name="loc85id" id="loc85id" value="41" class="hiddenPicks"></div>
+                                                <div id="location86" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="43">		<div class="seed"></div>		<div class="team">Florida St</div>	</div>	<div class="location_id">86</div>	<input type="hidden" name="loc86id" id="loc86id" value="43" class="hiddenPicks"></div>
+                                            </div>
+                                            <div class="round2 noMargin">
+                                                <div id="location87" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="45">		<div class="seed"></div>		<div class="team">Gonzaga</div>	</div>	<div class="location_id">87</div>	<input type="hidden" name="loc87id" id="loc87id" value="45" class="hiddenPicks"></div>
+                                                <div id="location88" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="47">		<div class="seed"></div>		<div class="team">Ohio St</div>	</div>	<div class="location_id">88</div>	<input type="hidden" name="loc88id" id="loc88id" value="47" class="hiddenPicks"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bracketColumn3">
+                                            <div class="round3">
+                                                <div id="location105" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="33">		<div class="seed"></div>		<div class="team">Syracuse</div>	</div>	<div class="location_id">105</div>	<input type="hidden" name="loc105id" id="loc105id" value="33" class="hiddenPicks"></div>
+                                                <div id="location106" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="37">		<div class="seed"></div>		<div class="team">Vanderbilt</div>	</div>	<div class="location_id">106</div>	<input type="hidden" name="loc106id" id="loc106id" value="37" class="hiddenPicks"></div>
+                                            </div>
+                                            <div class="round3 noMargin">
+                                                <div id="location107" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="41">		<div class="seed"></div>		<div class="team">Cincinnati</div>	</div>	<div class="location_id">107</div>	<input type="hidden" name="loc107id" id="loc107id" value="41" class="hiddenPicks"></div>
+                                                <div id="location108" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="45">		<div class="seed"></div>		<div class="team">Gonzaga</div>	</div>	<div class="location_id">108</div>	<input type="hidden" name="loc108id" id="loc108id" value="45" class="hiddenPicks"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bracketColumn4">
+                                            <div class="round4 noMargin">
+                                                <div id="location117" class="teamContainer teamContainerBG">	<div class="pickableTeam" rel="33">		<div class="seed"></div>		<div class="team">Syracuse</div>	</div>	<div class="location_id">117</div>	<input type="hidden" name="loc117id" id="loc117id" value="33" class="hiddenPicks"></div>
+                                                <div id="location118" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="41">		<div class="seed"></div>		<div class="team">Cincinnati</div>	</div>	<div class="location_id">118</div>	<input type="hidden" name="loc118id" id="loc118id" value="41" class="hiddenPicks"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bracketColumn5">
+                                            <div class="round5 noMargin">
+                                                <div id="location123" class="teamContainer noMargin teamContainerBG">	<div class="pickableTeam" rel="33">		<div class="seed"></div>		<div class="team">Syracuse</div>	</div>	<div class="location_id">123</div>	<input type="hidden" name="loc123id" id="loc123id" value="33" class="hiddenPicks"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="regionName" id="regionBottomLeft">
+                                            West    </div>
+                                        <!-- regionTopLeft -->
+
+                                    </div>
+
+
+
+
+
+                                </div>
                             </div>
 
-                            <div id="location12" class="teamContainer noMargin">
-                                <div class="pickableTeam" rel="12">
-                                    <div class="seed">14</div>
-                                    <div class="team">S Dakota St</div>
-                                </div>	<div class="location_id">12</div>
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="row twelve-col">
+                                <div class="column col-6">
+                                    <div class="blue_block"><h4>third 6 col</h4></div>
+                                </div>
+                                <div class="column col-6">
+                                    <div class="blue_block"><h4>fourth 6 col</h4></div>
+                                </div>
                             </div>
 
-                        </div>
+                        </div> <!-- end container home div -->
 
-                    </div>
+                    </div> <!-- end sub-body wings -->
+                </div> <!-- end sub-body -->
 
-                    <div id="south_group4" class="box">
 
 
 
-                    </div>
 
 
-                    <div id="east_group1" class="box">
 
 
 
-                    </div>
 
+            </div> <!-- end body wings -->
 
+        </div> <!-- end body div -->
 
-                    <div id="east_group2" class="box">
+    </body>
 
 
 
-                    </div>
 
-                    <div id="east_group3" class="box">
-
-
-
-                    </div>
-
-                    <div id="east_group4" class="box">
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div> <!-- end container main -->
-
-    </body>​​
 
 </html>

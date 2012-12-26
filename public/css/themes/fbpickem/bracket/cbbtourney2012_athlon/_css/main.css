@@ -1,0 +1,201 @@
+/* DEMO Theme Specfic styles*/
+
+/*
+Major - Black
+Minor - Dk Blue (800000)
+Alt =   Lt Blue (ac151a)
+*/
+
+div#body {
+    background: url(../_images/bg.jpg) no-repeat center 100px #000;
+    width: 100%;
+}
+div#wrapper {background: url(../_images/sidebarBg.png) repeat-y right #fff;}
+div#wrapper, div#wrapperFull {-moz-box-shadow: 0px 5px 20px #000; -webkit-box-shadow: 0px 5px 20px #000; box-shadow: 0px 5px 15px #000;}
+
+
+
+/*
+*** Gen Pop  */
+.cMin, a.cMin {color:#e9841f !important;}
+
+a.signupNow {background: url(../_images/btnSignUpNow.jpg) no-repeat; }
+
+
+/*
+*** Buttons */
+.btnPos {background: url(../_images/btnPosBg.png) repeat-x; color:#fff !important; border-top:1px solid #3f751f; border-left: 1px solid #558a36; border-right: 1px solid #558a36;}
+.btnPos:hover {background: #70bb4c;}
+
+.btnNeg {background: url(../_images/btnNegBg.png) repeat-x; color:#fff !important; border-top:1px solid #ad1500; border-left: 1px solid #cc4729; border-right: 1px solid #cc4729;}
+.btnNeg:hover {background: #d43923;}
+
+.btnDull {background: url(../_images/btnDullBg.png) repeat-x; color:#fff !important; border-top:1px solid #707070; border-left: 1px solid #707070; border-right: 1px solid #707070;}
+.btnDull:hover {background: #706f6f;}
+
+.btnMin {background: url(../_images/btnMinBg.png) repeat-x; color:#fff !important; border-top:1px solid #ea8715; border-left: 1px solid #f69a1b; border-right: 1px solid #f69a1b;}
+.btnMin:hover {background: #ffaf4a;}
+
+.btnPosBig {background: url(../_images/btnPosBigBg.png) repeat-x; color:#fff !important; border-top:1px solid #3f751f; border-left: 1px solid #558a36; border-right: 1px solid #558a36; }
+.btnPosBig:hover {background: #70bb4c;}
+
+/*
+*** Header */
+div#productLogo {background: url(../_images/productLogo.png) no-repeat center left; }
+
+
+/*
+*** Content - Nav  */
+div#navWrp {background: url(../_images/navBg.png) repeat-x 0 0;
+    border-bottom: 0px solid #800000;}
+.content h1 {color:#444444;}
+.content h2 {color:#B61414;}
+.content h2 a {color:#B61414;}
+
+ul#navMain li {border-left:1px solid #851C1C;}
+ul#navMain li.first {border-left: 0;}
+ul#navMain li a {color:#fff;}
+ul#navMain li.current a, ul#navMain li a:hover, ul#navMain li.sfhover a { background: url(../_images/navBg.png) repeat-x 0 -45px; color: #fff;}
+
+/* Main SubNav */
+ul#navMain li ul {background:#B61414; }
+ul#navMain ul li a {color:#fff; border-bottom: 1px solid #004c70; }
+
+ul#navMain ul li a:hover,
+ul#navMain ul li.sfhover a,
+ul#navMain ul li.sfhover ul li a:hover,
+ul#navMain ul li.sfhover ul li.sfhover a,
+ul#navMain ul li.sfhover ul li.sfhover a:hover {background: #ac151a !important;}
+
+ul#navMain ul li.sfhover ul li a,
+ul#navMain ul li.sfhover ul li.sfhover ul li a {background: #ac151a;}
+
+ul#navMain li ul li a {background: none !important;}
+
+ul#navLogin LI {background:none}
+ul#navLogin li a {color:#fff;}
+ul#navLogin Li:hover { background: url(../_images/navBg.png) repeat-x 0 -45px; color: #fff;}
+
+ul.pageNav li a {color:#B61414;}
+
+/* Static SubStrip */
+div#subnavWrp {background: #DA0B0B;}
+
+
+
+/*
+*** Content Main */
+a.arrowLink {background: url(../_images/arrowLink.png) no-repeat 0 0; padding-left: 10px;}
+
+.content a {color: #656565;}
+
+
+div.widgetBox div.widgetTitle {background:#333; ; }
+
+
+
+
+
+
+/*
+*** Sidebar */
+div#sidebar h1 {margin-top:15px; font-size: 1.6em; color:#fff; border-bottom: 1px solid #ddeeff; }
+
+div#userWrp {background: transparent url(../_images/userWrpBack.png) repeat-x bottom left;
+    border: 1px solid #D1D1D1; margin-bottom: 2px; color: #333}
+
+div#userWrp div#userInfo {color: #333;}
+div.sbBox a.readmore, div#userWrp div#userInfo a, div#userWrp A {color:#333 !important;}
+
+div.sbBox a {color:#444444; }
+div.sbBox img.stock {border:1px solid #666;}
+
+/*
+*** Sidebar ADMIN */
+div#navAdminWrp {background: #800000;}
+ul#navAdmin li {border-bottom: 1px solid #004c70; border-top: 1px solid #106c90;}
+ul#navAdmin li a {color:#fff;}
+ul#navAdmin li a:hover {text-decoration: underline;}
+
+
+
+/*
+*** Footer */
+
+div#footer {background: url(../_images/footer.png) no-repeat; height: 121px }
+div#navFooterLeft, div#navFooterRight {text-shadow: 1px 1px 2px rgba(0,0,0,0.5);}
+div#footer a {color:#fff;}
+
+.txtMsg {
+    background-color: #fff;
+    padding: 10px;
+}
+
+#contentCol #txtMsgWidget H1 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+
+.txtMsgHeadline {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.txtMsgText {
+    color: #999;
+    font-size: 13px;
+    line-height: 110%;
+}
+
+.txtMsgLegal {
+    color: #999;
+    font-size: 10px;
+}
+
+.txtMsg FORM {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.txtMsg TH {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.txtMsg TD {
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+.txtMsg INPUT.txtBox {
+    width: 40px;
+    margin-right: 5px;
+}
+
+#contentCol .txtMsg TABLE {
+    float: left;
+    margin-right: 20px;
+}
+#contentCol P.txtMsgLegal {
+    clear: both;
+    color: #999;
+    font-size: 10px;
+}
+
+#contentCol .txtMsg FORM.subscribe {
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+#contentCol .txtMsg FORM .btn {
+    margin-top: 15px;
+}

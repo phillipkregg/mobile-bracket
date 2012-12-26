@@ -1,0 +1,603 @@
+/* 	athlon sports
+	pickem-engine 2012
+----------------------------------------------------------------------------------------------------*/
+
+
+/*Client body background image*/
+.body.laredos {
+  background: #000 url('../../_images/background.png') no-repeat top center  !important;
+
+}
+
+/* Default header nav button colors*/
+header {
+
+  a {
+    &:hover {
+      background-color: #0086B4;
+    }
+  }
+
+  .current {
+    a {
+      background-color: #0086B4;
+      &:hover {
+        background-color: #0086B4;
+      }
+    }
+  }
+
+
+
+  .drop-link {
+    &:hover {
+      background-color: #0086B4;
+    }
+  }
+
+
+} //end header
+
+
+
+div.dropnav {
+  background-color: #0086B4;
+}
+
+
+body {
+  .home h2 {
+    //letter-spacing: .08em;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'ChunkFiveRegular';
+  }
+}
+
+
+.sub-body {
+    //background: #eaebec;
+  #slideshow {
+    .text {
+      h2 {
+        font-size: 25px !important;
+        //font-size-adjust: 3;
+        line-height: 38px !important;
+
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}
+
+#slideshow {
+  .text {
+    .padding {
+      h2 {
+        font-size: 25px !important;
+        //font-size-adjust: 3;
+        line-height: 38px !important;
+
+        margin-bottom: 15px;
+      }
+
+
+    }
+
+  }
+}
+
+
+
+/* Container
+----------------------------------------------------------------------------------------------------*/
+
+// Colored line under Nav
+.main.home {
+  border-top: 2px solid @navUnderline;
+}
+
+
+div.dropbody {
+  .gradient(@dropBodyBackgroundDark, @dropBodyBackgroundDark, @dropBodyBackgroundLight);
+}
+
+
+.home .livestreamEntry {
+  .gradient(@dropBodyBackgroundDark, @gray90, @dropBodyBackgroundLight);
+}
+
+
+.container {
+  &.main {
+    &.home {
+
+      .countdown {
+        height: 250px;
+        background: @gray98;
+
+        hr {
+          background-color: #e7e7e7;
+          height: 1px;
+          border: none;
+          width: 100%;
+        }
+
+        h3 {
+          font-size: 22px;
+          color: @white;
+          margin-bottom: 0;
+        }
+
+        h4 {
+          //font-size:
+          //margin-top: 5px;
+          color: @white;
+          &.remaining {
+            color: @slideTabCurrentBackground;
+          }
+        }
+
+        .countdown-header {
+          .gradient(@slideTabCurrentBackground, @slideTabCurrentBackground, @slideTabBackgroundLighter);
+          padding: 5px;
+
+
+
+        }
+      }
+
+      .slidetabs {
+        a {
+          font-family: 'ChunkFiveRegular', serif;
+          letter-spacing: 2px;
+          font-size: 15px;
+          &.current {
+            color: @slideTabText;
+            .gradient(@slideTabCurrentBackground, @slideTabCurrentBackground, @slideTabBackgroundLighter);
+          }
+        }
+      }
+
+      .message {
+        font-size: 12px;
+        padding: 5px;
+        //background: @messageBoxBackground;
+        //.gradient(@slideTabCurrentBackground, @slideTabCurrentBackground, @slideTabBackgroundLighter);
+      }
+      article {
+        h3 {
+          a {
+            &:hover {
+              span {
+                color: @articleHeaderHover;
+              }
+
+            }
+          }
+        }
+      }
+    } // end home
+  } // end main
+} // end container
+
+
+
+
+/* Header & Footer
+----------------------------------------------------------------------------------------------------*/
+
+/*Header nav button colors*/
+header .current a { background-color: @headerLinkBackground; }
+header .current a:hover { background-color: @headerLinkBackground; }
+header a:hover { background-color: @headerLinkBackgroundHover; }
+header .navitem a:hover { background-color: @headerLinkBackgroundHover; }
+header .drop-link:hover { background-color: @headerLinkBackgroundHover; }
+
+
+/* top menu */
+
+#topdrawer {
+  border-bottom: 2px solid #0086B4;
+}
+
+#topdrawer {
+  border-bottom: 2px solid @topdrawerBottomBorder;
+}
+
+// Pulldown button colors
+.pulldown-tabs a {
+  color: #fafafa;
+  .gradient(@slideTabCurrentBackground, @slideTabCurrentBackground, @slideTabBackgroundLighter);
+  //background: @pulldownTabBackground url('../_images/bkg/fade-to-black-40v.png') repeat-x top;
+  border: 1px solid #222;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+
+// affects login button color when login open
+.pulldown-tabs a.current {
+  background: @pulldownTabBackground;
+  border-color: @pulldownTabBackground;
+}
+
+
+
+
+
+
+/* Global nav
+----------------------------------------------------------------------------------------------------*/
+
+
+div.dropnav {
+  background-color: @dropNavBackground;
+  &.container {
+    .dropwrap {
+      .droplinks {
+        li {
+          a:hover {
+            color: #333;
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* League Lists
+----------------------------------------------------------------------------------------------------*/
+
+
+
+/* Home page
+----------------------------------------------------------------------------------------------------*/
+
+//#slideshow .text h2 {
+//  font-size: 18px !important;
+//  font-size-adjust: 3;
+//  line-height: 38px !important;
+//
+//  margin-bottom: 15px;
+//}
+
+
+.sub-body #slideshow .text h2 {
+  color: #333;
+  //font-family: 'chunkfiveregular', serif;
+  font-size: 20px !important;
+
+}
+
+
+.container.main.home {
+
+  .activity {
+    h2 {
+      color: #333;
+      font-family: 'ChunkFiveRegular', serif;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+
+  .latest {
+    h2 {
+      color: #333;
+      font-family: 'ChunkFiveRegular', serif;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+
+  .tab-body {
+    &.notabs {
+      h3 {
+        color: white;
+
+        font-weight: 200;
+        background: #333;
+        padding: 5px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+
+
+
+
+}
+
+
+
+div.callouts {
+  h2 {
+    color: #333;
+    font-family: 'ChunkFiveRegular', serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+}
+
+
+.body {
+  &.laredos {
+    footer {
+      background: #1B1B1B url('http://localhost:8080/less/themes/fbpickem/_css/../2012_default/_css/../../_images/bkg/footer.jpg') no-repeat top;
+    }
+  }
+}
+
+
+
+/* Typography
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Meters
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Tables
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Boxes
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Panels
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Avatar defaults
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* User Panel
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Experts
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Rounds
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Standings
+----------------------------------------------------------------------------------------------------*/
+
+
+
+/* Live Stream
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Dashboard Steps
+----------------------------------------------------------------------------------------------------*/
+
+
+
+/* Invites
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* News
+----------------------------------------------------------------------------------------------------*/
+
+
+
+/* Forms
+----------------------------------------------------------------------------------------------------*/
+
+/* form fields */
+
+
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Tool tips
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Modals
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Statcast
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Responsive Layout Adjustments
+----------------------------------------------------------------------------------------------------*/
+
+
+/*		Tablet Layout (landscape): 1024px.
+		Columns: 12 @ 45px.
+		Gutters: 40px.
+		Outer margins: 20px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11      12
+px      45    130    215    300    385    470    555    640    725    810     895     980    */
+
+
+
+
+
+
+
+
+
+
+/*		Tablet Layout (portrait): 768px.
+		Columns: 12 @ 34px.
+		Gutters: 30px.
+		Outer margins: 15px.
+		Inherits styles from: Default Layout.
+---------------------------------------------------------------------------------------------------
+cols    1     2     3       4       5       6       7       8       9       10      11     12
+px      34    98    162     226     290     354     418     482     546     610     674    738   */
+
+
+
+
+    /* Header
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Home Page
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*		Phone Layout (landscape): 480px.
+		Columns: 1 @ 440px.
+		Gutters: 40px.
+		Outer margins: 20px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Header
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Global nav
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Home page
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Dashboard Steps
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Footer
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*		Phone Layout (portrait): 320px.
+		Columns: 1 @ 300px.
+		Gutters: 20px.
+		Outer margins: 10px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width : 479px) {
+
+
+
+    /* Header
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Global nav
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+    /* Home page
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+    /* Dashboard Steps
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    /* Footer
+    ----------------------------------------------------------------------------------------------------*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

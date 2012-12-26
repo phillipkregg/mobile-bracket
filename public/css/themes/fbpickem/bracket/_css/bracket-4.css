@@ -1,0 +1,323 @@
+div#bracketWrp4 {background: url(/themes/bracket/_images/bracketBg4.jpg) no-repeat center center; overflow: hidden; min-height: 275px; position: relative; margin-top: 5px; width: 631px; display: block; }
+
+
+.bracketLeft{float:left; width:625px;}
+.bracketFinalsLeft{float:left; width:400px; margin-top: 70px; }
+.bracketFinalsRight{float:right; width:220px; margin-top: 70px; }
+
+
+.round1title{width:129px;}
+.round2title,
+.round3title,
+.round4title{width: 119px;}
+.round5title{width: 128px;}
+
+.round1title h5,
+.round2title h5,
+.round3title h5,
+.round4title h5,
+.round5title h5{line-height:100%; margin:0; padding:7px 4px 0 10px; font-size:12px; font-weight:bold;}
+.round6title h5{line-height:100%; margin:0; padding:0px 4px 0 4px; font-size:12px; font-weight:bold;}
+.round7title h5{line-height:100%; margin:0; padding:20px 4px 5px 4px; font-size:12px; font-weight:bold;}
+
+.round1title h6,
+.round2title h6,
+.round3title h6,
+.round4title h6,
+.round5title h6{line-height:100%; margin:0; padding:2px 4px 7px 10px; font-size:10px; font-weight:normal;}
+.round6title h6{line-height:100%; margin:0; padding:2px 4px 5px 4px; font-size:10px; font-weight:normal;}
+
+.bracketLeft .round1title,
+.bracketLeft .round2title,
+.bracketLeft .round3title,
+.bracketLeft .round4title,
+.bracketLeft .round5title{float:left; margin:0 1px 0 0; text-align:left; }
+
+.bracketColumn1{margin-top:0;}
+.bracketColumn2{margin-top:12px;}
+.bracketColumn3{margin-top:40px;}
+.bracketColumn4{margin-top:96px;}
+.bracketColumn5{margin-top:208px;}
+.bracketColumnFinals{margin-top:0px;}
+.bracketColumnFinal{margin-top:56px;}
+.bracketColumnChampion{margin:53px 0 0 0px; padding-left: 25px; overflow: hidden; }
+  .bracketLeft .bracketColumn1,
+  .bracketLeft .bracketColumn2, 
+  .bracketLeft .bracketColumn3, 
+  .bracketLeft .bracketColumn4,
+  .bracketLeft .bracketColumn5,
+  .bracketFinalsLeft .bracketColumnFinals,
+  .bracketFinalsLeft .bracketColumnFinal,
+  .bracketFinalsLeft .bracketColumnChampion{float:left;}
+  .bracketFinalsRight .bracketColumnFinals,
+  .bracketFinalsRight .bracketColumnFinal{float:right;}
+  
+  .bracketColumn1{width:130px;}
+  .bracketColumn2, 
+  .bracketColumn3, 
+  .bracketColumn4{width:120px;}
+  .bracketColumn5{width:120px;}
+  .bracketColumnFinals{width:120px;}
+  .bracketColumnFinal{width:95px; overflow: hidden;}
+  .bracketColumnChampion{width:150px;}
+  
+  .bracketLeft .round1,
+  .bracketLeft .round2,
+  .bracketLeft .round3,
+  .bracketLeft .round4{float:left; }
+  .bracketFinalsLeft .bracketColumnFinals{float:left; background:transparent url("/themes/bracket/_images/bgBracketBorder.png") repeat-y top right;}
+  .bracketFinalsRight .bracketColumnFinals{float:right; background:transparent url("/themes/bracket/_images/bgBracketBorder.png") repeat-y top left;}
+  
+
+  
+.round1{width:130px;}
+  
+.round2,
+.round3,
+.round4{
+  padding:0;
+  width:120px;
+  overflow:hidden;
+  position:relative;
+}
+.round5,
+.roundFinals{
+  padding:0;
+  width:119px;
+  height:130px;
+  overflow:hidden;
+  position:relative;
+}
+.roundFinal{
+  padding:0;
+  width:101px;
+  overflow:hidden;
+  position:relative;
+}
+.roundChampion{
+  padding:0;
+  width:152px;
+  overflow:hidden;
+  position:relative;
+}
+.roundChampion p{
+  text-align: center;
+  font-size:11px;
+  font-weight:bold;
+  color:#333;
+}
+  .round1{margin-bottom:11px;}
+  .round2{margin-bottom:35px;}
+  .round3{margin-bottom:91px;}
+  .round4{margin-bottom:0px;}
+  .round5{margin-bottom:0px;}
+.teamContainer{
+  height:21px;
+  overflow: hidden;
+  font-size:10px;
+  line-height:100%;
+  position:relative;
+  color: #333;
+}
+  .round1 .teamContainer{
+    width: 129px;
+
+  }
+  .round2 .teamContainer,
+  .round3 .teamContainer,
+  .round4 .teamContainer{
+    width: 119px;
+
+  }  
+  .round5 .teamContainer,
+  .roundFinals .teamContainer{
+    width: 120px;
+	  background: url(/themes/bracket/_images/teamConBg.png) repeat-x; 
+    overflow: hidden;
+  }
+  .roundFinal .teamContainer{
+    width: 100px;
+	  background: url(/themes/bracket/_images/teamConBg.png) repeat-x; 
+  }
+    .roundChampion .teamContainer{
+      width: 150px;
+      height: 27px;
+	  background: url("/themes/bracket/_images/teamConBgBig.png") repeat-x;
+    }
+    
+		.roundChampion .conHover {background: url(/themes/bracket/_images/teamConBgBigHov.png) repeat-x !important}
+    
+  .roundChampion .team{
+		color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 27px !important;
+    text-align: center;
+    width: 100%;
+    
+  }
+  .roundChampion .seed{
+    display:none;
+  }
+  .round2 .teamContainerBG,
+  .round3 .teamContainerBG,
+  .round4 .teamContainerBG,
+  .round5 .teamContainerBG,
+  .roundFinals .teamContainerBG{
+
+  }
+  .roundFinal .teamContainerBG{
+
+  }
+  
+  .bracketLeft .teamContainer,
+  .bracketFinalsLeft .teamContainer{
+    float: left;
+    text-align: left;
+  }
+  .bracketFinalsRight .teamContainer{
+    float: right;
+    text-align: right;
+  }
+.bracketLeft .team,
+.bracketFinalsLeft .team,
+.bracketFinalsRight .team{
+  overflow:hidden;
+     line-height: 21px;
+
+
+}
+.bracketFinalsLeft .team{
+  float: left;
+}
+.bracketFinalsRight .team{
+  float: right;
+}
+.round1 .teamContainer{margin-bottom: 3px;}
+.round2 .teamContainer{margin-bottom: 35px;}
+.round3 .teamContainer{margin-bottom: 91px;}
+.round4 .teamContainer{margin-bottom: 203px;}
+/*.roundFinals .teamContainer{margin-bottom: 91px;}*/
+#location121{
+  position:absolute;
+  top:0;
+  left:0;
+}
+#location122{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+#location123{
+  position:absolute;
+  top:0;
+  right:0;
+}
+#location124{
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.round1 .noMargin,
+.round2 .noMargin,
+.round3 .noMargin,
+.round4 .noMargin,
+.roundFinals .noMargin,
+.roundFinal .noMargin{margin-bottom:0px;}
+
+.noMargin{margin-bottom:0;}
+
+.statcast{width: 13px;}
+  .bracketFinalsLeft .statcast{
+    float:right;
+    padding: 3px 2px 0 0;
+  }
+  .bracketFinalsRight .statcast{
+    float:left;
+    padding: 3px 0 0 2px;
+  }
+  .bracketLeft .statcast{
+    float:right;
+    padding: 3px 2px 0 0;
+  }
+
+  .bracketLeft .seed,
+  .bracketFinalsLeft .seed{float:left;}
+  .bracketFinalsRight .seed{float:right;}
+
+  .pickableTeam{cursor:pointer;}
+ 
+/*
+  #statusBar{
+    font-size:10px;
+    padding:0;
+    margin:0;
+    text-align:center;
+  }
+  
+.progressBarContainer{
+  width:607px;
+  padding:10px 0;
+  margin:0 auto;
+  text-align:left;
+}
+.progressBar{
+  width:607px;
+  height:5px;
+  position:relative;
+  border:1px solid #999;
+  background-color: #ddd;
+  padding:0;
+  margin:0;
+}
+.progressBar span{
+  position:absolute;
+  display:block;
+  width:607px;
+  height:5px;
+  background-color: #900;
+  top:0px;
+  left:0px;
+  overflow:hidden;
+  text-indent:-8000px;
+  line-height:5px;
+}
+.progressBar em{
+  position:absolute;
+  display:block;
+  width:100%;
+  height:5px;
+  background-color: #ddd;
+  top:0;
+}
+
+.incorrectPick{color:#900; text-decoration:line-through;}
+.correctPick{color:#048804;}
+
+.team_id{display:none;}
+.location_id{display:none;}
+
+.historyKey{padding:4px; background-color:#eee; border:1px solid #ccc;}
+.historyKey p{padding:0; margin:0; color:#666;}
+
+#mainSubNav li {
+  margin:0 0 0 20px;
+}
+li.regioncomplete{
+  background:transparent url("../../media/imgs/shared/bg-bracket-complete.gif") no-repeat top left;
+  padding:0 0 0 22px;
+}
+li.regionincomplete{
+  background:transparent url("../../media/imgs/shared/bg-bracket-incomplete.gif") no-repeat top left;
+  padding:0 0 0 22px;
+}*/
+
+div#bracketLogo16 {
+    height: 70px;
+    position: absolute;
+    left: 200px;
+    text-align: center;
+    top: 10px;
+    width: 227px;
+}
