@@ -24,16 +24,16 @@ end
 
 
 group :development do
-  #gem 'sqlite3'
+  gem 'sqlite3'
   
 end
 
 
 group :production do
-  #gem 'pg'
-  #gem 'libv8', '~> 3.11.8'
-  #gem 'therubyracer'
-  #gem 'less'
+  gem 'pg'
+  gem 'libv8', '~> 3.11.8'
+  gem 'therubyracer'
+  gem 'less'
 end
 
 
