@@ -3,15 +3,15 @@
 <html>
 
     <head>
-        <link rel="stylesheet/less" href="css/themes/fbpickem/_css/fbpickem.less" media="all">
+        <link media="screen, projection" rel="stylesheet/less" href="css/themes/fbpickem/_css/fbpickem.less" >
 
         <!-- Bracket specific styles -->
 
 
-        <link type="text/css" rel="stylesheet" href="css/themes/fbpickem/bracket/_css/cbbtourney.css">
+        <link media="screen, projection" type="text/css" rel="stylesheet" href="css/themes/fbpickem/bracket/_css/cbbtourney.css">
         <!--<link type="text/css" rel="stylesheet" href="css/themes/fbpickem/bracket/_css/main.css">-->
 
-        <link media="all" rel="stylesheet/less" href="css/themes/fbpickem/bracket/_css/overrides.less">
+        <link media="screen, projection" rel="stylesheet/less" href="css/themes/fbpickem/bracket/_css/overrides.less">
 
 
 
@@ -21,18 +21,28 @@
         <!-- Bracket specific javascripts -->
         <script type="text/javascript" src="css/themes/fbpickem/bracket/_js/bracket.js"></script>
         <script type="text/javascript" src="js/mobile-bracket.js"></script>
-        <script type="text/javascript" src="js/bootstrap_scrollspy.js"></script>
-        <script type="text/javascript" src="js/bootstrap_affix.js"></script>
+       <!--  <script type="text/javascript" src="js/bootstrap_scrollspy.js"></script>
+        <script type="text/javascript" src="js/bootstrap_affix.js"></script> -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script>
-            $('#navbar').affix();
+        <script>        
+        	$(document).ready(function() {
+        		
+        		//$('#navbar_container').affix({ offset: 0 });
+            
+            	//$("#regionMidwest").scrollspy({ offset: 200 });
+        		
+        		
+        	});            
         </script>
 
 
     </head>
 
 
-    <body data-spy="scroll" data-offset="400" data-target="#navbar">
+    <body data-spy="scroll" data-offset="0" >
         <h1>Body Starts</h1>
 
 
@@ -146,18 +156,12 @@
                                                 <li><a class="" href="#south_group2"></a></li>
                                                 <li><a class="" href="#south_group3"></a></li>
                                                 <li><a class="" href="#south_group4"></a></li>
-                                                <li><a class="" href="#east_group1"></a></li>
-                                                <li><a class="" href="#east_group2"></a></li>
-                                                <li><a class="" href="#east_group3"></a></li>
-                                                <li><a class="" href="#east_group4"></a></li>
-                                            </ul>
-                                            <ul class="nav">
-                                                <li><a class="" href="#"></a></li>
                                                 <li><a class="" href="#"></a></li>
                                                 <li><a class="" href="#"></a></li>
                                                 <li><a class="" href="#"></a></li>
                                                 <li><a class="" href="#"></a></li>
                                             </ul>
+                                            
                                         </div>
 
                                         <!--<div class="" id="bracket_nav">-->
@@ -198,7 +202,7 @@
 
 
 
-                            <div class="row twelve-col">
+                            <div class="row twelve-col" >
                                 <div class="column col-6">
 
 
