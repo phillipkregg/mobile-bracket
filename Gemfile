@@ -30,17 +30,14 @@ end
 
 
 group :production do
-<<<<<<< HEAD
+
   # gem 'pg'
   # gem 'libv8', '~> 3.11.8'  
   # gem 'therubyracer'
   # gem 'less'
-=======
-  gem 'pg'
-  gem 'libv8', '~> 3.11.8'
-  gem 'therubyracer'
-  gem 'less'
->>>>>>> 347b7c80f69fda52d4c3dc9dacff8e941fe1d47e
+
+  
+
 end
 
 
