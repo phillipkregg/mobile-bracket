@@ -1,15 +1,22 @@
 
 $(document).ready(function() {
 
-    checkWindowSize();
-    var windowWidth;
+    //checkWindowSize();
+    //var windowWidth;
+    
+    if($(window).width() < 767) {
+                // switch orientation of brackets to left facing
+        $("#regionEast").removeClass("bracketRight").addClass("bracketLeft");
+
+
+    }
 
 
 
     function checkWindowSize() {
         $(window).resize(function() {
             windowWidth = $(window).width();
-            //$('body').prepend('<div>' + windowWidth + '</div>');
+           
 
             var regionEast =  $("#regionEast");
 
